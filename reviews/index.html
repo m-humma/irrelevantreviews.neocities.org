@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <style>
+        .horrendous, .bad, .mediocre, .good, .amazing, .perfect{
+            font-weight: bold;
+        }
+        #game{
+            width: 100%;
+        }
+        img{
+            height: 170px;
+            border: 5px rgb(55, 0, 92) solid
+        }
+        #ui{
+            a{
+                color: pink !important;
+            }
+        }
+        #container{
+            overflow: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        #container::-webkit-scrollbar {
+            display: none;
+        }
+        a{
+            color: yellow;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <script src="/global.js"></script>
+
+    <header class="main">
+        <div id="logo">
+            Irrelevant Reviews<br>
+        </div>
+        <div id="subtext">
+            <small>
+                Game reviews nobody asked for
+            </small>
+        </div>
+    </header>
+
+    <nav class="main" id="ui">
+        <center style="font-style: italic;">
+            <a href="/index.html">Home</a> •
+            <a href="/reviews/index.html">Reviews</a> •
+            <a href="/blog/index.html">Blog</a>
+        </center>
+    </nav>
+
+    <script>
+        // taken from w3schools
+        function search(no) {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("input" + no);
+        filter = input.value.toUpperCase();
+        table = document.getElementById("mainTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[no];
+            if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+            }       
+        }
+        }
+
+        // advanced search dialogue option
+        function showAdvanced(){
+            document.getElementById("advanced").style.display="inline";
+            document.getElementById("label").style.display="none";
+        }
+    </script>
+
+    <section id="body">
+        <aside class="main" id="side">
+            <h1>Search</h1>
+            <p>
+                Search for reviews using these input boxes. Only one search query can be active at a time because I suck at coding.
+            </p>
+            <hr>
+            <center>
+                <input style="background-image: url(/assets/icon/game.jpg);" type="text" id="input2" onkeyup="search(2)" placeholder="Search by game..." title="Type in a game or DLC title">
+                <input style="background-image: url(/assets/icon/platform.jpg);" type="text" id="input5" onkeyup="search(5)" placeholder="Search by platform..." title="Type in a console/platform&#10;&#10;Supported platforms: 3DS, Arcade, GBA, Mobile, PC, PS1, PS2, PS3, PS4, PS5, PSP, Switch, Switch 2, Wii, Xbox One, Xbox Series X|S">
+                <input style="background-image: url(/assets/icon/genre.jpg);" type="text" id="input6" onkeyup="search(6)" placeholder="Search by genre..." title="Type in a genre&#10;&#10;Supported Genres: Action, Adventure, Fighting, Platform, Puzzle, Rhythm, Role-playing, Simulation">
+                <hr>
+                <div id="label" onclick="showAdvanced();" style="cursor: pointer;">
+                    <i><u>▼ Advanced search options...</u></i>
+                </div>
+                <div id="advanced" style="display: none">
+                    <input style="background-image: url(/assets/icon/number.jpg);" type="text" id="input0" onkeyup="search(0)" placeholder="Search by number..." title="Type in a review number">
+                    <input style="background-image: url(/assets/icon/rating.jpg);" type="text" id="input1" onkeyup="search(1)" placeholder="Search by rating..." title="Type in a rating number">
+                    <input style="background-image: url(/assets/icon/developer.jpg);" type="text" id="input3" onkeyup="search(3)" placeholder="Search by developer..." title="Type in a game company">
+                    <input style="background-image: url(/assets/icon/year.jpg);" type="text" id="input4" onkeyup="search(4)" placeholder="Search by year..." title="Type in a year">
+                    <input style="background-image: url(/assets/icon/series.jpg);" type="text" id="input7" onkeyup="search(7)" placeholder="Search by series..." title="Type in a game series">
+                </div>
+                <hr>
+                <button onclick="randomReview();" style="height: 40px; width: 200px;">
+                    Random Review
+                </button>
+            </center>
+        </aside>
+
+        <main class="main" id="review">
+            <h1>Reviews</h1>
+            This is a collection of all the reviews I've made. Yeah, not much... I know.
+            <hr>
+            <div id="container">
+                <table id="mainTable">
+                    <tr>
+                        <th>#</th>
+                        <th>Rating</th>
+                        <th id="game">Game</th>
+                        <th>Developer</th>
+                        <th>Year</th>
+                        <th>Platform</th>
+                        <th>Genre</th>
+                        <th>Series</th>
+                    </tr>
+                    <tr> <!-- Gitaroo Man -->
+                        <td>8</td>
+                        <td>
+                            <span class="good">6.5</span>
+                        </td>
+                        <td>
+                            <a href="/reviews/2026/gitaroo-man.html">
+                                <img src="/assets/boxart/gitaroo-man.png"><br>
+                                Gitaroo Man
+                            </a>
+                        </td>
+                        <td>iNIS</td>
+                        <td>2006</td>
+                        <td>PS2, PSP, PS4, PS5</td>
+                        <td>Rhythm</td>
+                        <td>-</td>
+                    </tr>
+                    <tr> <!-- Katamari Damacy -->
+                        <td>7</td>
+                        <td>
+                            <span class="perfect">10</span>
+                        </td>
+                        <td>
+                            <a href="/reviews/2026/katamari-damacy.html">
+                                <img src="/assets/boxart/katamari-damacy.jpg"><br>
+                                Katamari Damacy
+                            </a>
+                        </td>
+                        <td>Namco</td>
+                        <td>2004</td>
+                        <td>PS2, PS3, PS4, Xbox One, Switch</td>
+                        <td>Puzzle, Action</td>
+                        <td>
+                            <i>Katamari</i>
+                        </td>
+                    </tr>
+                    <tr> <!-- LocoRoco -->
+                        <td>2</td>
+                        <td>
+                            <span class="amazing">8</span>
+                        </td>
+                        <td>
+                            <a href="/reviews/2026/locoroco.html">
+                                <img src="/assets/boxart/locoroco.jpg"><br>
+                                LocoRoco
+                            </a>
+                        </td>
+                        <td>Japan Studio</td>
+                        <td>2006</td>
+                        <td>PSP, PS4, Mobile</td>
+                        <td>Platform, Puzzle</td>
+                        <td><i>LocoRoco</i></td>
+                    </tr>
+                    <tr> <!-- The Mermaid Mask -->
+                        <td>11</td>
+                        <td>
+                            <span class="perfect">10</span>
+                        </td>
+                        <td>
+                            <a href="/reviews/2026/mermaid-mask.html">
+                                <img src="/assets/boxart/mermaid-mask.png"><br>
+                                Mermaid Mask, the
+                                <span style="display: none;">The Mermaid Mask</span>
+                            </a>
+                        </td>
+                        <td>SFB Games</td>
+                        <td>2026</td>
+                        <td>PC, Switch, Switch 2, PS5</td>
+                        <td>Puzzle, Adventure</td>
+                        <td>Detective Grimoire</td>
+                    </tr>
+                    <tr> <!-- Miitopia -->
+                        <td>4</td>
+                        <td>
+                            <span class="amazing">8</span>
+                        </td>
+                        <td>
+                            <a href="/reviews/2026/miitopia.html">
+                                <img src="/assets/boxart/miitopia.jpg"><br>
+                                Miitopia
+                            </a>
+                        </td>
+                        <td>Nintendo SPD</td>
+                        <td>2016</td>
+                        <td>3DS, Switch</td>
+                        <td>Action, Adventure, Role-Playing</td>
+                        <td>-</td>
+                    </tr>
+                    <tr> <!-- Parappa the Rapper -->
+                        <td>3</td>
+                        <td>
+                            <span class="good">6.5</span>
+                        </td>
+                        <td>
+                            <a href="/reviews/2026/parappa-the-rapper.html">
+                                <img src="/assets/boxart/parappa-the-rapper.jpg"><br>
+                                Parappa the Rapper<br>
+                                <small>Bonus Tracks DLC</small>
+                            </a>
+                        </td>
+                        <td>NanaOn-Sha</td>
+                        <td>1996</td>
+                        <td>PS1, PSP, PS4</td>
+                        <td>Rhythm</td>
+                        <td><i>Parappa the Rapper</i></td>
+                    </tr>
+                    <tr> <!-- Rhythm Heaven Groove -->
+                        <td>12</td>
+                        <td>
+                            <span class="perfect">10</span>
+                        </td>
+                        <td>
+                            <a href="/reviews/2026/rhythm-heaven-groove.html">
+                                <img src="/assets/boxart/rhythm-heaven-groove.jpg"><br>
+                                Rhythm Heaven Groove
+                                <span style="display: none;">Rhythm Paradise Groove</span>
+                            </a>
+                        </td>
+                        <td>Nintendo EPD</td>
+                        <td>2026</td>
+                        <td>Switch</td>
+                        <td>Rhythm</td>
+                        <td><i>Rhythm Heaven</i> <span style="display: none;">Rhythm Paradise</span></td>
+                    </tr>
+                    <tr> <!-- Rhythm Tengoku -->
+                        <td>1</td>
+                        <td>
+                            <span class="good">7.5</span>
+                        </td>
+                        <td>
+                            <a href="/reviews/2026/rhythm-tengoku.html">
+                                <img src="/assets/boxart/tengoku.jpg"><br>
+                                Rhythm Tengoku
+                                <span style="display: none;">Rhythm Heaven Silver</span>
+                            </a>
+                        </td>
+                        <td>Nintendo SPD, J.P. Room</td>
+                        <td>2006</td>
+                        <td>GBA, Arcade</td>
+                        <td>Rhythm</td>
+                        <td><i>Rhythm Heaven</i> <span style="display: none;">Rhythm Paradise</span></td>
+                    </tr>
+                    <tr> <!-- Snipperclips: Cut It Out, Together! -->
+                        <td>5</td>
+                        <td>
+                            <span class="perfect">10</span>
+                        </td>
+                        <td>
+                            <a href="/reviews/2026/snipperclips.html">
+                                <img src="/assets/boxart/snipperclips.jpg"><br>
+                                Snipperclips: Cut It Out, Together!<br>
+                                <small>Snipperclips Plus</small>
+                                <span style="display: none;">Snipperclips Cut It Out Together</span>
+                            </a>
+                        </td>
+                        <td>SFB Games</td>
+                        <td>2017</td>
+                        <td>Switch</td>
+                        <td>Puzzle</td>
+                        <td>-</td>
+                    </tr>
+                    <tr> <!-- Super Smash Bros. Brawl -->
+                        <td>6</td>
+                        <td>
+                            <span class="good">7</span>
+                        </td>
+                        <td>
+                            <a href="/reviews/2026/smash-bros-brawl.html">
+                                <img src="/assets/boxart/ssb-brawl.jpg"><br>
+                                Super Smash Bros. Brawl<br>
+                                <span style="display: none;">Super Smash Bros Brawl</span>
+                                <span style="display: none;">Super Smash Brothers Brawl</span>
+                            </a>
+                        </td>
+                        <td>Sora Ltd.</td>
+                        <td>2008</td>
+                        <td>Wii</td>
+                        <td>Fighting, Platform</td>
+                        <td><i>Super Smash Bros. <span style="display: none;">Super Smash Brothers</span></i></td>
+                    </tr>
+                    <tr> <!-- Tangle Tower -->
+                        <td>9</td>
+                        <td>
+                            <span class="perfect">10</span>
+                        </td>
+                        <td>
+                            <a href="/reviews/2026/tangle-tower.html">
+                                <img src="/assets/boxart/tangle-tower.jpg"><br>
+                                Tangle Tower
+                            </a>
+                        </td>
+                        <td>SFB Games</td>
+                        <td>2019</td>
+                        <td>PC, Switch, PS4, Xbox One, Mobile</td>
+                        <td>Puzzle, Adventure</td>
+                        <td><i>Detective Grimoire</i></td>
+                    </tr>
+                    <tr> <!-- Tomodachi Life: Living the Dream -->
+                        <td>10</td>
+                        <td>
+                            <span class="good">7</span>
+                        </td>
+                        <td>
+                            <a href="/reviews/2026/tomodachi-life-tld.html">
+                                <img src="/assets/boxart/tomodachi-life-tld.jpg"><br>
+                                Tomodachi Life: Living the Dream
+                                <span style="display: none;">Tomodachi Life Living the Dream</span>
+                            </a>
+                        </td>
+                        <td>Nintendo EPD</td>
+                        <td>2026</td>
+                        <td>Switch</td>
+                        <td>Simulation</td>
+                        <td><i>Tomodachi</i></td>
+                    </tr>
+                    <tr> <!-- We Love Katamari -->
+                        <td>10</td>
+                        <td>
+                            <span class="perfect">10</span>
+                        </td>
+                        <td>
+                            <a href="/reviews/2026/we-love-katamari.html">
+                                <img src="/assets/boxart/we-love-katamari.png"><br>
+                                We ♥︎ Katamari
+                                <span style="display: none;">We Love Katamari</span>
+                            </a>
+                        </td>
+                        <td>Namco</td>
+                        <td>2005</td>
+                        <td>PS2, PS4, PS5, Switch, Xbox One, Xbox Series X|S, PC</td>
+                        <td>Puzzle, Action</td>
+                        <td><i>Katamari</i></td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </section>
+
+    <footer class="main" id="footer">
+        <a href="https://neocities.org/site/irrelevantreviews">Irrelevant Reviews</a> | 2026- |
+        Powered by <a href="https://neocities.org/">Neocities</a><br>
+    </footer>
+    <hr id="nothing">
+</body>
+</html>

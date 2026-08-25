@@ -1,0 +1,380 @@
+@font-face{
+  font-family: Handwriting;
+  src: url(assets/handwriting.otf);
+}
+@font-face{
+  font-family: Additional1;
+  src: url(assets/additional1.otf);
+}
+@font-face{
+  font-family: Redacted;
+  src: url(assets/redacted.ttf);
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+  font-size: 1.3em;
+  background-color: rgb(219, 165, 255);
+  font-family: "Handwriting", "Additional1", "Arial", "Times New Roman";
+  color: black;
+  accent-color: gold;
+  scrollbar-color: gold blueviolet;
+}
+small{
+  font-size: 22px; 
+}
+h1, h2, h3, p{
+  margin: 0;
+  margin-bottom: 5px;
+}
+h1{
+  font-size: 65px;
+  color: gold;
+}
+h2{
+  font-size: 50px;
+  color: rgb(236, 201, 0);
+}
+h3{
+  font-size: 35px;
+  color: rgb(218, 185, 1);
+}
+a{
+  color: pink;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+hr{
+  border: 2px rgb(55, 0, 92) solid;
+  margin-top: 5px;
+}
+blockquote{
+  border-left: 10px gold solid;
+  margin-right: 10px;
+  padding: 10px;
+  font-style: italic;
+  background-color: rgb(170, 80, 255);
+
+  span, div{
+    font-style: normal;
+    text-align: right;
+    margin-right: 20px;
+  }
+  a{
+    color: black;
+    font-style: italic;
+  }
+}
+iframe{
+  float: right;
+  margin: 10px;
+  border: 5px rgb(55, 0, 92) solid;
+  background-color: rgb(19, 0, 32);
+}
+audio{
+  margin-top: 10px;
+}
+th, td{
+  border: 3px rgb(55, 0, 92) solid;
+  background-color: rgb(170, 80, 255);
+  padding: 5px;
+  text-align: center;
+}
+ul{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+li::marker, ul::marker{
+  color: gold;
+}
+dl{
+  color: gold;
+}
+dd{
+  color: black;
+  margin-bottom: 20px;
+}
+mark{
+  background-color: gold;
+}
+input{
+  width: 86%;
+  color: black !important;
+  background-color: rgb(170, 80, 255);
+  border: 2px gold solid;
+  font-family: "Handwriting";
+  font-size: 0.9em;
+  margin: 2px;
+  padding: 5px;
+  background-image: url(/assets/icon/old-search.jpg);
+  background-size: 36px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+button{
+  background-color: rgb(117, 35, 194);
+  color: gold;
+  border: 2px gold solid;
+  padding: 5px;
+  font-family: "Handwriting";
+  font-size: 20px;
+}
+button:hover{
+  background-color: rgb(73, 0, 101);
+  transition: 0.25s;
+}
+::placeholder{
+  color: black;
+  font-style: italic;
+}
+
+.main{
+  background: blueviolet;
+  border: 10px rgb(55, 0, 92) solid;
+  margin: 10px;
+  padding: 10px;
+}
+.img{
+  width: 160px !important;
+  background-color: white;
+}
+.age-rating{
+  height: 40px !important;
+  width: 30px !important;
+  border: 1px black solid !important;
+  float: right;
+  margin-left: 3px;
+  background-color: white;
+}
+.game-title{
+  color: gold;
+  font-style: italic;
+}
+.dlc-title{
+  color: lightgreen;
+  font-style: italic;
+}
+.note{
+  color: gold;
+  text-decoration:
+  underline;
+  cursor: pointer;
+}
+.audio-subtext{
+  font-size: 20px;
+}
+
+#logo{
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-size: 5vw;
+  text-shadow: 0 0 2vw white;
+  text-decoration: underline;
+  color: gold;
+}
+#game-logo{
+  width: 50% !important;
+}
+#subtext{
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin-bottom: 5px;
+}
+#footer, footer{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.6em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+
+  a{
+    color: black;
+  }
+}
+#body{
+  display: flex;
+}
+#side, aside{
+  box-sizing: border-box;
+  float: left;
+  width: 30%;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  img{
+    width: 300px;
+    border: 7px rgb(55, 0, 92) solid;
+    margin-bottom: 2px;
+  }
+  span{
+    color: rgb(219, 165, 255);
+  }
+  #title{
+    color: gold;
+    font-style: italic;
+  }
+  #stats{
+    margin-left: 10px;
+  }
+  #rating{
+    font-size: 3em;
+    font-weight: bold;
+  }
+}
+#toc{
+  margin-left: 10px;
+
+  span{
+    color: rgb(55, 0, 92);
+  }
+  .dec{
+    margin-left: 20px;
+  }
+  a{
+    color: black;
+  }
+}
+#main-img{
+  width: 300px !important;
+}
+#director{
+  color: gold;
+  font-weight: bold !important;
+}
+#sources{
+  width: 100%;
+
+  a{
+    color: gold !important;
+  }
+}
+#review{
+  width: 70%;
+  box-sizing: border-box;
+  float: right;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#dlc-container{
+  background-color: rgb(170, 80, 255);
+}
+.dlc{
+  font-size: 20px;
+  font-style: italic;
+
+  .horrendous, .bad, .good, .amazing, .perfect{
+    font-size: 25px;
+  }
+}
+#spoiler1, #spoiler2, #spoiler3, #spoiler4, #spoiler5{
+  font-family: "Redacted";
+}
+#spoiler1:hover, #spoiler2:hover, #spoiler3:hover, #spoiler4:hover, #spoiler5:hover{
+  color: black;
+  transition: 0.7s;
+  cursor: pointer;
+}
+#nothing{
+  border: 2px rgb(219, 165, 255) solid
+}
+
+.omit-on-desktop{
+  display: none;
+}
+
+@media(max-width: 1290px){
+  /* for phones */
+  .omit-on-phone{
+    display: none;
+  }
+  .omit-on-desktop{
+    display: inline;
+  }
+  .img{
+      width: 100px !important;
+  }
+
+  #game-logo{
+    width: 90% !important;
+  }
+  #side{
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  #review{
+    margin-top: 10px;
+    width: 100%;
+    float: none;
+  }
+  #main-img{
+    width: 250px !important;
+  }
+  #img-container{
+    overflow-y: scroll;
+    overflow-x: auto;
+    height: 500px;
+    padding: 3px;
+    border: 5px rgb(55, 0, 92) solid;
+    scrollbar-color: gold rgb(55, 0, 92);
+    background-color: gold;
+  }
+
+  #body{
+    flex-direction: column;
+    float: none;
+    padding: 10px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+.horrendous{
+  color: darkred !important; /* Horrendous */
+}
+.bad{
+  color: red !important; /* Bad */
+}
+.mediocre{
+  color: yellow !important; /* Mediorce */
+}
+.good{
+  color: chartreuse !important; /* Good */
+}
+.amazing{
+  color: darkgreen !important; /* Amazing */
+}
+.perfect{
+  color: blue !important; /* Perfect */
+  text-shadow: 0 0 30px yellow;
+}
+
+/* text selection */
+::selection {
+  background-color: rgb(55, 0, 92);
+  color: gold;
+}
+::-moz-selection {
+  background-color: rgb(55, 0, 92);
+  color: gold;
+}
+::-o-selection {
+  background-color: rgb(55, 0, 92);
+  color: gold;
+}
+::-ms-selection {
+  background-color: rgb(55, 0, 92);
+  color: gold;
+}
+::-webkit-selection {
+  background-color: rgb(55, 0, 92);
+  color: gold;
+}

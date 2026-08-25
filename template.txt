@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+    <!--
+    # NOTE FOR SELF -- HUMMA @ IRRELEVANT REVIEWS
+        ----------------------------------------------
+        |                 CHECKLIST                  |
+        ----------------------------------------------
+        |   Title                            |   N   |
+        |   Side Info                        |   N   |
+        |   Table of Contents                |   N   |
+        |   Images and Sources               |   N   |
+        |   Main review                      |   N   |
+        |   Rating Score                     |   N   |
+        |   Age ratings and platform         |   N   |
+        |   Date and Number                  |   N   |
+        |   Reviews page and Home            |   N   |
+        |   Update genres searchbox          |   N   |
+        |   Update global.js                 |   N   |
+        |   Backloggd                        |   N   |
+        ----------------------------------------------
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+</head>
+<body>
+    <script src="/global.js"></script>
+    
+    <header class="main">
+        <div id="logo">
+            Irrelevant Reviews<br>
+        </div>
+        <div id="subtext">
+            <small>
+                Game reviews nobody asked for
+            </small>
+        </div>
+    </header>
+
+    <nav class="main">
+        <center style="font-style: italic;">
+            <a href="/index.html">Home</a> •
+            <a href="/reviews/index.html">Reviews</a> •
+            <a href="/blog/index.html">Blog</a>
+        </center>
+    </nav>
+
+    <section id="body">
+        <aside class="main" id="side">
+            <center>
+                <img src="/assets/boxart/-">
+                <br>
+                <span id="title">
+                    -
+                </span>
+                <hr>
+            </center>
+            <div id="stats">
+                <span>Developers:</span> <br>
+                <span>Initial Release:</span> <br>
+                <span>Platform:</span> <br>
+                <span>Genre:</span> <br>
+                <span>Series:</span> <i>-</i>
+            </div>
+            <hr>
+            <div id="toc">
+                <h3>Table of Contents</h3>
+                <span>1.</span> <a href="#1">Synopsis</a><br>
+                <span>2.</span> <a href="#2">Art</a><br>
+                <span>3.</span> <a href="#3">Gameplay</a><br>
+                <span>4.</span> <a href="#4">Music</a><br>
+                <span>5.</span> <a href="#5">Verdict</a><br>
+            </div>
+            <hr>
+            <center>
+                <span id="rating" class="-">-</span>/10<br>
+                <i>-</i>
+            </center>
+            <hr>
+            <div id="img-container">
+                <table>
+                    <tr>
+                        <td>
+                            <img class="img" id="main-img" src="/assets/side/directors">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="director" href="">--</a>
+                        </td>
+                    </tr>
+                </table>
+                <table id="sources">
+                    <tr>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </aside>
+
+        <main class="main" id="review">
+            <h1 id="1">Synopsis</h1>
+            <p>
+                <span class="game-title">-</span>
+            </p>
+
+            <hr>
+            🛈 Reviewed on --
+            <!-- age ratings -->
+        </main>
+    </section>
+
+    <footer class="main" id="footer">
+        <a href="https://neocities.org/site/irrelevantreviews">Irrelevant Reviews</a> | 
+        Powered by <a href="https://neocities.org/">Neocities</a><br>
+        <i>Written on dd/mm/yyyy | #-</i>
+    </footer>
+    <hr id="nothing">
+</body>
+</html>
