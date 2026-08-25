@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrelevant Reviews</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://dsring.neocities.org/dswidget/onionring.css">
+    <style>
+        .btn-container{
+            img{
+                height: 40px;
+            }
+            a{
+                color: gold !important;
+            }
+        }
+        #webrings{
+            table, td, tr, th{
+                border: 0;
+                background-color: rgb(193, 127, 255);
+            }
+        }
+        #webrings-container{
+            overflow: auto;
+            width: 80vw;
+            -ms-overflow-style: none;
+            scrollbar-width: none; 
+        }
+        #games-container{
+            overflow-x: auto;
+            overflow-y: hidden;
+            -ms-overflow-style: none;
+            scrollbar-width: none; 
+        }
+        #games-container::-webkit-scrollbar, #webrings-container::-webkit-scrollbar {
+            display: none;
+        }
+        #games{
+            td{
+                vertical-align: bottom;
+            }
+            hr{
+                margin-bottom: 3px;
+            }
+            img{
+                width: 200px;
+                border: 5px rgb(55, 0, 92) solid;
+            }
+            a{
+                color: yellow !important;
+            }
+            span{
+                font-size: 20px;
+            }
+        }
+        .date{
+            color: yellow;
+        }
+        .blog{
+            margin: 0;
+            margin-left: 100px;
+        }
+        .omit{
+            display: none;
+        }
+
+        /* .zero{
+            background-color: gray;
+            color: black;
+            border-color: black;
+        }
+        .one-two{
+            background-color: darkred;
+            color: white;
+            border-color: white;
+        }
+        .three-four{
+            background-color: red;
+            color: white;
+            border-color: white;
+        }
+        .five{
+            background-color: yellow;
+            color: black;
+            border-color: black;
+        }
+        .six-seven{ 
+            background-color: chartreuse;
+            color: white;
+            border-color: white;
+        }
+        .eight-nine{
+            background-color: darkgreen;
+            color: white;
+            border-color: white;
+        }
+        .ten{
+            background-color: blue;
+            color: yellow;
+            border-color: yellow;
+        } */
+
+        @media(max-width: 1290px){
+            .omit{
+                display: block;
+            }
+            .omitphone{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    #
+    # This is a test to check if GitHub is functioning properly.
+    #
+    -->
+    <header class="main">
+        <div id="logo">
+            Irrelevant Reviews<br>
+        </div>
+        <div id="subtext">
+            <small>
+                Game reviews nobody asked for
+            </small>
+        </div>
+    </header>
+
+    <nav class="main">
+        <center style="font-style: italic;">
+            <a href="index.html">Home</a> •
+            <a href="reviews/index.html">Reviews</a> •
+            <a href="blog/index.html">Blog</a>
+        </center>
+    </nav>
+
+    <main class="main">
+    
+        <h1>About</h1>
+        <p>
+            Hello! This is a tiny website I use to publish my own game reviews
+            online. I'm not a professional by any means, and I only write these
+            for fun, so don't expect too much. Obviously, every review I write is
+            subjective, so don't be too peeved if you don't agree with a review.
+            I'm only starting out right now, so the website is a little barren,
+            but it'll come to life the more I write. Most of the games I play are
+            pretty old, hence the name <em>"irrelevant"</em>, but I'll still try to
+            play some newer ones... maybe. I just write about what I care about. See
+            my game library on <a href="https://backloggd.com/u/Humma/">Backloggd</a>! I also have a <a href="https://retroachievements.org/user/Humma">Retro<wbr>Achievements account</a>.
+            If you wanna know more about me, visit my <a href="junk/100-questions">100 Questions for Webmasters</a>.
+        </p>
+        <hr>
+        
+        <script>
+           function copy() {
+               // from w3schools
+              // Copy the text inside the text field
+              navigator.clipboard.writeText(
+`<a href="https://irrelevantreviews.neocities.org">
+\t<img src="https://irrelevantreviews.neocities.org/assets/btn.gif" style="width: 88px: height: 31px;">
+</a>`
+              );
+
+              // Alert the copied text
+              alert("Copied!");
+          }
+        </script>
+        
+        <table align="center" style="max-width: 1000px;">
+            <tr>
+                <td>
+                    <img src="assets/btn.gif" style="width: 150px; border: 5px rgb(55, 0, 92) solid;"><br>
+                    <button onclick="copy()">Copy code</button>
+                </td>
+                <td>
+                    <h3 style="color: gold;">Button</h3>
+                    <p>
+                        Feel free to add my button to your neocities site if you like my website enough!
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3 style="color: gold;">Neighbours</h3>
+                    <div class="btn-container">
+                        <a target="_blank" href="https://shpeck.neocities.org/"><img src="https://shpeck.neocities.org/images/shpeck_button.gif" alt="shpeck's shack"/></a>
+                        <a href="https://blutab.neocities.org/" target="_blank"> <img src="https://blutab.neocities.org/img/button/blutabbutton.gif" alt="blutab"/> </a>
+                        <a href="https://tabf5.com/" target="_blank"><img src="https://tabf5.com/img/button.gif" alt="TabF5" style="image-rendering: pixelated;"></a>
+                        <a href="https://shens.world/"> <img src="assets/btn/shensworld.png" alt="Shen's World"></a>
+                        <a href="https://lankarta-project.neocities.org"><img src="https://lankarta-project.neocities.org/assets/lankartabuttonstatic.png" alt="Lankarta Project"></a>
+                        <a href="https://lattematche.neocities.org"><img src="https://lattematche.neocities.org/assets/lattematche.gif" alt="LatteMatche"></a>
+                        <a href="https://spotties.neocities.org/" target="_blank"><img src="https://spotties.neocities.org/assets/spotties.gif" alt="Spotties"></a>
+                        <a href="https://kanandraw.neocities.org/" target="_blank"><img src="https://kanandraw.neocities.org/stampimg/kananbutton.gif" alt="kanan draw"></a>
+                        <a href="https://sugarhyou.neocities.org"><img src="https://sugarhyou.neocities.org/assets/graphics/buttons/SugarHyou.gif" alt="SugarHyou"></a>
+                        <a href="https://notesfromearth.neocities.org" target="_blank"><img src="https://notesfromearth.neocities.org/graphics/notesfromearth-button.png" alt="Notes From Earth"></a>
+                        <a href="https://p7uen.neocities.org" target="_blank"><img src="https://p7uen.neocities.org/images/buttons/p7button.gif" alt="P7uen: Video Game Archaeology"></a>
+                        <a href="https://fr3akhaz4rd.neocities.org/" target="_blank"><img src="https://fr3akhaz4rd.neocities.org/ohnoidiot.gif" alt="FR3AK HAZ4RD"></a>
+                        <a target="_blank" href="https://aetherway.neocities.org"><img src="https://millennium-whoop.github.io/aetherway/buttons/88x31_01.gif" alt="Aetherway"></a>
+                        <a target="_blank" href="https://abnormalsweater.neocities.org"><img src="https://abnormalsweater.neocities.org/Button2.gif" alt="Abnormal Sweater/Wayne's Place"></a>
+                        <a target="_blank" href="https://ruinacchi.neocities.org/"><img src="https://file.garden/aeBQIRXpyQbZMG6n/button.png" alt="Ruinacchi"></a> 
+                        <a target="_blank" href="https://infi-power.neocities.org"><img src="https://infi-power.neocities.org/ui/banner-silver.png" alt="Infi-Power"></a>
+                        <a target="_blank" href="https://thegameboyabyss.neocities.org"><img src="assets/btn/gb-abyss.png" alt="The Gameboy Abyss"></a>
+                        <a target="_blank" href="https://n-has-a-site.neocities.org"><img src="https://n-has-a-site.neocities.org/download%20(6).png" alt="N Has A Site"></a>
+                        <a target="_blank" href="https://artivadar.neocities.org"><img src="https://artivadar.neocities.org/artivadar_button2.png" alt="A. R. Tivadar and Her Stuff"></a>
+                        <a target="_blank" href="https://lunar-novascape.neocities.org"><img src="https://lunar-novascape.neocities.org/lunar-novascape.gif" alt="Lunar Novascape"></a>
+                        <a target="_blank" href="https://oblivious-oddy.neocities.org"><img src="https://oblivious-oddy.neocities.org/Images/Site Assets/GIFs/BannerButton_128bit.gif" alt="Oblivious Pixels"></a>
+                    </div>
+                    <hr>
+                    <h3 style="color: gold;">Other</h3>
+                    <div class="btn-container">
+                        <img src="assets/btn/neocities.png" alt="Made with Neocities">
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/Israeli%E2%80%93Palestinian_conflict"><img src="assets/btn/palestine.gif" alt="Free Palestine!"></a>
+                        <a target="_blank" href="https://webmasterwebring.netlify.app"><img src="https://file.garden/ZrZSgsrYfQXsO7QH/ww/btn.png" alt="Webmaster Webring"></a>
+                        <a target="_blank" href="https://readingproject.au"><img src="https://readingproject.au/Pictures/SitePictures/SiteButtons/ReadingProjectButton2.png" alt="The Reading Project"></a>
+                        <a target="_blank" href="junk/age-ratings.html"><img src="/assets/btn/esrb/e10+.jpg" alt="E10+ for Everyone Above Ten - ESRB" title="E10+ for Everyone Above Ten - ESRB"></a>
+                        <a target="_blank" href="junk/age-ratings.html"><img src="/assets/btn/pegi/7.jpg" alt="7 - PEGI" title="7 - PEGI"></a>
+					    <a href="https://evehibi.nekoweb.org/ringlink/info.html" target="_blank"><img src="https://evehibi.nekoweb.org/ringlink/button.gif" alt="Ringlink"></a>
+                  <a href="https://wordywebring.neocities.org"><img src="https://wordywebring.neocities.org/wordy-button.gif" alt="Wordy Webring"></a>
+                  <a href="https://julieyess.neocities.org/rhythmwebring/rhythmgamewebring"><img src="https://julieyess.neocities.org/rhythmwebring/Opera1.png" alt="Rhythm Games Webring"></a>
+                  <a href="https://kanandraw.neocities.org/stuffs/droidring/home"><img src="https://kanandraw.neocities.org/stuffs/droidring/assets/droidringbutton.png"></a>
+                  <a href="https://petrapixel.neocities.org/indiewebdb/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/links/indiewebdb.png" alt="indie web database"></a>
+                     </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3 style="color: gold;">Webrings</h3>
+                    <center>
+                    <div id="webrings-container">
+                        <table id="webrings" align="center">
+                            <tr>
+                            <td>
+                                    <table id="palestinering">
+                                        <td>
+                                            <a href="https://catboo.leprd.space/webring/redirect.php?prv&s=irr" title="previous">
+                                                <img src="https://websitesforpalestine.neocities.org/widget/left.png" alt="previous">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="https://websitesforpalestine.neocities.org/" target="_blank">
+                                                <img src="https://websitesforpalestine.neocities.org/widget/center.png" alt="websites for a free palestine">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="https://catboo.leprd.space/webring/redirect.php?nxt&s=irr" title="next">
+                                                <img src="https://websitesforpalestine.neocities.org/widget/right.png" alt="next">
+                                            </a>
+                                        </td>
+                                    </table>
+                                </td>
+                                <td>
+                                    <div>
+                                        <iframe style="border: none; width: 140px; background-color: rgba(0, 0, 0, 0);" src="https://wiiring.jeith.com/snippet?site=https://irrelevantreviews.neocities.org/&variant=standard"></iframe>
+                                    </div>
+                                </td>
+                                <td>
+                                    <map name="badge-wwstamp">
+                                        <area shape="rect" coords="66,38,79,49" href="https://webmasterwebring.netlify.app?irrelevantreviews-previous" alt="Previous">
+                                        <area shape="rect" coords="78,29,90,40" href="https://webmasterwebring.netlify.app?irrelevantreviews-next" alt="Next">
+                                        <area shape="rect" coords="13,15,63,47" href="https://webmasterwebring.netlify.app" alt="Webmaster Webring">
+                                    </map>
+                                    <img usemap="#badge-wwstamp" id="ww-stamp" src="https://file.garden/ZrZSgsrYfQXsO7QH/ww/stamp.png" alt="Webmaster Webring" width="99" height="56">
+                                </td>
+                                <td>
+                                    <a href="https://coffeebug.neocities.org/webring"><img src="https://coffeebug.neocities.org/webring.gif"></a>
+                                </td>
+                                <td>
+                                    <div id="dsring" style="font-size: 0.5em !important;">
+                                        <script type="text/javascript" src="https://dsring.neocities.org/dswidget/onionring-variables.js"></script>
+                                        <script type="text/javascript" src="https://dsring.neocities.org/dswidget/onionring-widget.js"></script>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="width: 180px; font-family: monospace; text-align: center; border: 1px purple dotted; padding-bottom: 5px; background-color: white;">
+                                         <img src="https://wordywebring.neocities.org/unown-pink.jpg" style="width:100%;">
+                      <a href="https://wordywebring.neocities.org" style="color: purple;"><b>wordy webring</b></a><br>
+                      <a href="https://wordywebring.neocities.org?action=previous" style="color: purple;">previous</a>
+                      <a href="https://wordywebring.neocities.org?action=random" style="color: purple;">random</a>
+                      <a href="https://wordywebring.neocities.org?action=next" style="color: purple;">next</a>
+                  </div>
+                                </td>
+                                <td>
+                                  
+                  <div class = "webWidget6">
+   
+                      <img src = "https://julieyess.neocities.org/rhythmwebring/webDance.png" height = "50px">  <br>
+                      <a href="https://julieyess.neocities.org/rhythmwebring/rhythmgamewebring? irrelevantreviews-previous">←</a>
+                      <a href="https://julieyess.neocities.org/rhythmwebring/rhythmgamewebring? irrelevantreviews-random">Random</a>
+                      <a href="https://julieyess.neocities.org/rhythmwebring/rhythmgamewebring">Home</a>
+                      <a href="https://julieyess.neocities.org/rhythmwebring/rhythmgamewebring? irrelevantreviews-next">→</a>
+                  </div> 
+  
+   
+                                                    </td>
+                                    <td>
+                                    <center>
+                    <div class="droidringwidget" style="background-color: black; padding: 5px;">
+                        <a href="https://kanandraw.neocities.org/stuffs/droidring/home"><img src="https://kanandraw.neocities.org/stuffs/droidring/assets/logo.png" style="width: 200px;"></a><br/>
+                        <img src="https://kanandraw.neocities.org/stuffs/droidring/assets/droidwidget.png" style="width: 115px;"><br>
+                        <div class="buttonsdroidring">
+                        <a href="https://kanandraw.neocities.org/stuffs/droidring/home?action=previous"><button class="navdroidring">←</button></a>
+                        <a href="https://kanandraw.neocities.org/stuffs/droidring/home?action=random"><button class="navdroidring" style="position: relative; top: 1.6px;">⚄</button></a>
+                        <a href="https://kanandraw.neocities.org/stuffs/droidring/home?action=next"><button class="navdroidring">→</button></a>
+                        </div>
+                    </div>
+                    </center>
+                    </td>
+                                                    
+                    </div>
+                    </center>
+
+                                </td>
+                                <td>
+                                    <div id='gamer-ring' style="width: 150px;">
+                                        <script type="text/javascript" src="https://gamerring.neocities.org/js/variables.js"></script>
+                                         <script type="text/javascript" src="https://gamerring.neocities.org/js/widget-minimal.js"></script>
+                                    </div>
+                                </td>
+                <td>
+                <table id="purplering">
+                <tr>
+                <td>
+                <div class="purple-webring">
+  <a href="https://purple-ring.neocities.org?action=previous">
+    <img src="https://purple-ring.neocities.org/images/left-arrow.gif"></a>
+    </td><td>
+  <a href="https://purple-ring.neocities.org">
+    <img src="https://purple-ring.neocities.org/images/widget.gif"></a>
+    </td><td>
+  <a href="https://purple-ring.neocities.org?action=next">
+    <img src="https://purple-ring.neocities.org/images/right-arrow.gif"></a>
+    </td></tr></table>
+</div>
+</td>
+
+                <td>
+                <div style="width: 303px !important;" id='PikRing'>
+<link rel="stylesheet" href="https://nickolox.com/pikring/css/blue.css">
+<script type="text/javascript" src="https://nickolox.com/pikring/pikring-variables.js"></script>
+<script type="text/javascript" src="https://nickolox.com/pikring/pikring-widget.js"></script>
+</div>
+    
+                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                </tr>
+        </table>
+        <hr>
+        <center>
+            <span style="color: gold;">Currently playing:</span> We ♥︎ Katamari, Paper Mario: Color Splash<br>
+            <span style="color: gold;">Planning to play:</span> Nothing at the moment...
+        </center>
+    </main>
+
+    <div class="main">
+        <h1><span class="omitphone">Recent</span> Reviews</h1>
+
+        <div id="games-container">
+            <table id="games" align="center">
+                <tr>
+                    <td>
+                        <a href="/reviews/2026/we-love-katamari.html">
+                            <img src="assets/boxart/we-love-katamari.png"><br>
+                            We ♥︎ Katamari
+                        </a><hr>
+                        <span>
+                            22/Aug/2026 | <b class="perfect">10</b>
+                        </span>
+                    </td>
+                    <td>
+                        <a href="/reviews/2026/rhythm-heaven-groove.html">
+                            <img src="assets/boxart/rhythm-heaven-groove.jpg"><br>
+                            Rhythm Heaven Groove
+                        </a><hr>
+                        <span>
+                            16/Aug/2026 | <b class="perfect">10</b>
+                        </span>
+                    </td>
+                    <td>
+                        <a href="/reviews/2026/mermaid-mask.html">
+                            <img src="assets/boxart/mermaid-mask.png"><br>
+                            The Mermaid Mask
+                        </a><hr>
+                        <span>
+                            5/Aug/2026 | <b class="perfect">10</b>
+                        </span>
+                    </td>
+                    <td>
+                        <a href="/reviews/2026/tomodachi-life-tld.html">
+                            <img src="assets/boxart/tomodachi-life-tld.jpg"><br>
+                            Tomodachi Life: Living the Dream
+                        </a><hr>
+                        <span>
+                            26/Jul/2026 | <b class="good">7</b>
+                        </span>
+                    </td>
+                    <td>
+                        <a href="/reviews/2026/tangle-tower.html">
+                            <img src="assets/boxart/tangle-tower.jpg"><br>
+                            Tangle Tower
+                        </a><hr>
+                        <span>
+                            28/Jun/2026 | <b class="perfect">10</b>
+                        </span>
+                    </td>
+                    <td>
+                        <a href="/reviews/2026/gitaroo-man.html">
+                            <img src="assets/boxart/gitaroo-man.png"><br>
+                            Gitaroo Man
+                        </a><hr>
+                        <span>
+                            24/Jun/2026 | <b class="good">6.5</b>
+                        </span>
+                    </td>
+                    <td style="vertical-align: middle; font-size: 2em;">
+                        <a href="reviews/index.html">→</a>
+                    </td>
+            </table>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1>
+            Rating<span class="omit-on-desktop">s</span> <span class="omit-on-phone">System</span>
+        </h1>
+        <table align="center">
+            <tr>
+                <th class="zero" style="width: 50px;">#</th>
+                <th class="zero" style="width: 120px;">Rating</th>
+                <th class="zero">Description</th>
+            </tr>
+            <tr>
+                <td class="horrendous">1-2</td>
+                <td class="one-two">Horrendous</td>
+                <td class="one-two">Absolutely abyssmal. Do not play unless you want to be miserable.</td>
+            </tr>
+            <tr>
+                <td class="bad">3-4</td>
+                <td class="three-four">Bad</td>
+                <td class="three-four">Still bad, but it's <i>almost</i> enjoyable. Just almost. Play at risk.</td>
+            </tr>
+            <tr>
+                <td class="mediocre">5</td>
+                <td class="five">Mediocre</td>
+                <td class="five">It's okay. It has flaws, but it's still enjoyable. Might be a bit of a slog, though.</td>
+            </tr>
+            <tr>
+                <td class="good">6-7</td>
+                <td class="six-seven">Good</td>
+                <td class="six-seven">Decent game, I would recommend, though they're not the first to come to mind.</td>
+            </tr>
+            <tr>
+                <td class="amazing">8-9</td>
+                <td class="eight-nine">Amazing</td>
+                <td class="eight-nine">Amazing game. You will have an amazing time if you play. Play if you're interested.</td>
+            </tr>
+            <tr>
+                <td class="perfect">10</td>
+                <td class="ten">Perfect</td>
+                <td class="ten">Absolute must-play. Some of my favourite games. Play them now!</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="main">
+      <h1>Credits</h1>
+      <ul>
+        <li>
+          Main font designed by me. <a href="https://fonts.google.com/specimen/Redacted"><i>Redacted</i></a> font used for spoilers taken from <a href="https://fonts.google.com">Google Fonts</a>.
+        </li>
+        <li>
+          All reviews are hand-written by me.
+        </li>
+        <li>
+          Icons and additional assets drawn by me.
+        </li>
+          Age-rating icons are taken from <a href="https://www.wikipedia.org">Wikipedia</a>.
+        </li>
+        <li>
+          All audio files and images have their sources linked below them.
+        </li>
+        <li>
+          The entire website is heavily inspired by <i><a href="https://readingproject.au">The Reading Project</a></i>. Go check them out! 
+        </li>
+        <li>
+          Website hosted on <a href="https://neocities.org/">Neocities</a>.
+        </li>
+        <li>
+            Reviews proofread by my sister. :)
+        </li>
+      </ul>
+    </div>
+    
+    <div class="main">
+        <h1>Guestbook</h1>
+        <table align="center" style="width: 100%; vertical-align: center; color: gold;">
+            <tr>
+                <td>
+                    <div>
+                        <iframe src="https://irrelevantreviews.atabook.org" width="97%" height="300px" style="margin: 0 auto;  display: block;"></iframe>
+                    </div>
+                    <span class="omit-on-phone">
+                        <br><br>A<br>T<br>A<br>B<br>O<br>O<br>K
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="main">
+      <h1>Contact</h1>
+      <p>
+        If you need to contact me, you can message me on my <a href="https://neocities.org/site/irrelevantreviews">neocities profile</a> or my Gmail: <i><a href="mailto:irrelevantreviews.site@gmail.com">irrelevantreviews.site<wbr>@gmail.com</a></i>. Be nice! I won't listen if you act rude.
+        </p><br>
+        <center>    
+          <a style="text-decoration: none;" href="mailto:irrelevantreviews.site@gmail.com?subject=Report a found issue...">
+           <button>
+            Report Issue
+           </button>
+          </a>
+          |
+          <a style="text-decoration: none;" href="mailto:irrelevantreviews.site@gmail.com?subject=Request a game...&body=Game:%0AExtra notes (optional):">
+           <button>
+            Game suggestion
+           </button>
+          </a>
+        </center>
+    </div>
+
+    <footer class="main" id="footer">
+        <a href="https://neocities.org/site/irrelevantreviews">Irrelevant Reviews</a> | 2026- | 
+        Powered by <a href="https://neocities.org/">Neocities</a>
+    </footer>
+    <hr id="nothing">
+</body>
+</html>
