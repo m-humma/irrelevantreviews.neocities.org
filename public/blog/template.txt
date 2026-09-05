@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | ---</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+</head>
+<body>
+    <script src="/global.js"></script>
+    
+    <header class="main">
+        <div id="logo">
+            Irrelevant Reviews<br>
+        </div>
+        <div id="subtext">
+            <small>
+                Game reviews nobody asked for
+            </small>
+        </div>
+    </header>
+
+    <nav class="main">
+        <center style="font-style: italic;">
+            <a href="/index.html">Home</a> •
+            <a href="/reviews/index.html">Reviews</a> •
+            <a href="/blog/index.html">Blog</a>
+        </center>
+    </nav>
+
+    <div class="main">
+        <div class="blog-nav">
+            <a title="Entry #" href="">&lt;&lt;</a>
+            <span title="Entry #" style="color: black;">Entry #</span>
+            <span title="Nothing to see here..." style="color: gray !important;">&gt;&gt;</span>
+        </div><br>
+        <span class="blog-date">-- -- --</span>
+        <h1>---</h1><hr>
+        <p>
+
+        </p>
+    </div>
+    
+    <footer class="main" id="footer">
+        <a href="https://neocities.org/site/irrelevantreviews">Irrelevant Reviews</a> | 
+        Powered by <a href="https://neocities.org/">Neocities</a><br>
+        <i>Written on -- | #-</i>
+    </footer>
+    <hr id="nothing">
+</body>
+</html>

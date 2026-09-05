@@ -295,10 +295,55 @@ button:hover{
   display: none;
 }
 
+
+#signature{
+  color: gold;
+  float: right;;
+}
+.blog-date{
+  float: right;
+  display: inline;
+  color: gold;
+  margin-top: 30px;
+}
+.blog-nav{
+  text-align: center;
+  border: 5px rgb(55, 0, 92) solid;
+  background-color: rgb(170, 80, 255);
+  padding: 5px;
+
+  a{
+    color: gold !important;
+  }
+}
+.blog-img{
+  border: 5px rgb(55, 0, 92) solid;
+  float: right;
+  margin: 10px;
+}
+.warning{
+  border: 5px darkred solid;
+  padding: 5px;
+  background-color: lightcoral;
+  margin-bottom: 5px;
+
+  div{
+    font-size: 100px;
+    /* border-right: 5px darkred solid;
+    padding-right: 5px; */
+    display: inline;
+  }
+  table, tr, td, th{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+  }
+}
+
 @media(max-width: 1290px){
   /* for phones */
   .omit-on-phone{
     display: none;
+    color: rgb(170, 80, 55);
   }
   .omit-on-desktop{
     display: inline;

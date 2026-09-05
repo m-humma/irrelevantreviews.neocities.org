@@ -7,12 +7,34 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <style>
-        span{
-            color: yellow;
+        nav{
+            a{
+                color: pink !important;
+            }
         }
-        p{
-            margin: 0;
-            margin-left: 100px;
+        a{
+            color: black !important;
+        }
+        .entry{
+            border: 5px rgb(55, 0, 92) solid;
+            padding: 7px;
+            background-color: rgb(170, 80, 255);
+            margin-bottom: 5px;
+
+            center{
+                color: gold;
+            }
+        }
+        .title{
+            font-size: 35px;
+            color: rgb(218, 185, 1);
+            font-weight: bold;
+        }
+        .number{
+            float: right;
+            font-size: 35px;
+            color: rgb(218, 185, 1);
+            font-weight: bold;
         }
     </style>
 </head>
@@ -36,37 +58,48 @@
         </center>
     </nav>
 
-    <main class="main" id="blog">
+    <main class="main">
         <h1>Blog</h1>
-        <p style="margin: 0;">
-            <s>Hello! This is my, er, <em>"blog"</em>. Yeah, I know, it's so barren... give it a month and it'll be spruced up! I just post whatever I feel is important.</s> Okay, fine, I admit it! I abandoned this ages ago. Am I sorry? Not really.<br><br>
-            
-            <center>
-                <span style="color: gold;">See also:</span> <a href="/junk/100-questions">100 Questions for Webmasters</a>
-            </center>
-        </p>
-        <hr>
-        <span>28/Apr/2026</span>
         <p>
-            I really don't know why I added this blog since I literally never use it...
+            A collection of all my blog posts.
         </p>
-        <span>4/Apr/2026</span>
-        <p>
-            Added <a href="junk/100-questions">100 Questions for Webmasters</a>.
-        </p>
-        <span>21/Mar/2026</span>
-        <p>
-            I've added images to the side of every review. Hope you like them!
-        </p>
-        <span>15/Mar/2026</span>
-        <p>
-          God, I am really hungry right now...
-        </p>
-        <span>13/Mar/2026</span>
-        <p>
-            I've now just uploaded the site to <a href="https://neocities.org/">Neocities</a>, so I hope this website
-            finds you well! If you have anything to say, please do so on <a href="https://neocities.org/site/irrelevantreviews">my profile</a>. I don't mind any criticism. :))
-        </p>
+
+        <a href="2026/history.html">
+            <div class="entry">
+                <span class="title">The History of My Site</span>
+                <span class="number">#3</span><hr>
+                <p>
+                    My very first <em>"proper"</em> blog post. Talks about why I started ths very site!
+                </p>
+                <center>
+                    6/Sep/2026
+                </center>
+            </div>
+        </a>
+        <a href="2026/100q.html">
+            <div class="entry">
+                <span class="title">100 Questions for Webmasters</span>
+                <span class="number">#2</span><hr>
+                <p>
+                    100 questions, and 100 answers -- template is from mouseling.net.   
+                </p>
+                <center>
+                    4/Apr/2026
+                </center>
+            </div>
+        </a>
+        <a href="2026/legacy.html">
+            <div class="entry">
+                <span class="title">Legacy Blog</span>
+                <span class="number">#1</span><hr>
+                <p>
+                    A collecton of all the old blog posts I made before I revamped this page.
+                </p>
+                <center>
+                    (multiple)
+                </center>
+            </div>
+        </a>
     </main>
 
     <footer class="main" id="footer">
