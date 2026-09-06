@@ -96,6 +96,7 @@ li::marker, ul::marker{
 }
 dl{
   color: gold;
+  margin-left: 30px;
 }
 dd{
   color: black;
