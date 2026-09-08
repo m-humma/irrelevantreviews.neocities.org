@@ -173,6 +173,15 @@ button:hover{
   font-size: 20px;
 }
 
+#sticker{
+  position: absolute;
+  z-index: 99;
+  border: 0 !important;
+}
+#sticker:hover{
+    transition: 0.2s;
+    opacity: 5%;
+}
 #logo{
   font-style: italic;
   font-weight: bold;
