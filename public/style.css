@@ -25,9 +25,6 @@ html, body{
   accent-color: gold;
   scrollbar-color: gold blueviolet;
 }
-body{
-  overflow-x: hidden;
-}
 small{
   font-size: 22px; 
 }
