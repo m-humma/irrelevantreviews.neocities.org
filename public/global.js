@@ -16,5 +16,5 @@ function randomReview(){
 
 // sourced by self function
 function self(){
-    window.alert("My source? Well, I made it myself! With a box of scraps and an emulator!")
+    window.alert("My source? Well, I made it myself! With a box of scraps in a cave!")
 }
