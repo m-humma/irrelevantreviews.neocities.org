@@ -351,9 +351,8 @@ button:hover{
 
 @media(max-width: 1290px){
   /* for phones */
-  .omit-on-phone{
+  .omit-on-phone, .sticker-omitted{
     display: none;
-    color: rgb(170, 80, 55);
   }
   .omit-on-desktop{
     display: inline;
