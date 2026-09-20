@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    # NOTE FOR SELF -- HUMMA @ IRRELEVANT REVIEWS
+        ----------------------------------------------
+        |                 CHECKLIST                  |
+        ----------------------------------------------
+        |   Title                            |   Y   |
+        |   Side Info                        |   Y   |
+        |   Table of Contents                |   Y   |
+        |   Images and Sources               |   Y   |
+        |   Main review                      |   Y   |
+        |   Rating Score                     |   Y   |
+        |   Age ratings and platform         |   Y   |
+        |   Date and Number                  |   Y   |
+        |   Sticker                          |   N   |
+        |   Reviews page and Home            |   Y   |
+        |   Update genres searchbox          |   Y   |
+        |   Update global.js                 |   N   |
+        |   Backloggd                        |   N   |
+        ----------------------------------------------
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wobbledogs</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <style>
+        #sticker{
+            left: 250px;
+            top: 930px;
+            height: 130px !important;
+            width: 130px !important;
+            transform: rotate(16deg);
+        }
+    </style>
+</head>
+<body>
+    <script src="/global.js"></script>
+    
+    <header class="main">
+        <div id="logo">
+            Irrelevant Reviews<br>
+        </div>
+        <div id="subtext">
+            <small>
+                Game reviews nobody asked for
+            </small>
+        </div>
+    </header>
+
+    <nav class="main">
+        <center style="font-style: italic;">
+            <a href="/index.html">Home</a> •
+            <a href="/reviews/index.html">Reviews</a> •
+            <a href="/blog/index.html">Blog</a>
+        </center>
+    </nav>
+
+    <section id="body">
+        <aside class="main" id="side">
+            <center>
+                <img src="/assets/boxart/wobbledogs.jpg">
+                <br>
+                <span id="title">
+                    Wobbledogs
+                </span>
+                <hr>
+            </center>
+            <div id="stats">
+                <span>Developers:</span> Animal Uprising<br>
+                <span>Initial Release:</span> 2022<br>
+                <span>Platform:</span> PC, Switch, PS4, Xbox One<br>
+                <span>Genre:</span> Simulation, Sandbox<br>
+            </div>
+            <hr>
+            <div id="toc">
+                <img src="/assets/sticker/randy.webp" id="sticker">
+                <h3>Table of Contents</h3>
+                <span>1.</span> <a href="#1">Synopsis</a><br>
+                <span>2.</span> <a href="#2">Art</a><br>
+                <span>3.</span> <a href="#3">Gameplay</a><br>
+                <div class="dec">
+                    <span>3.1</span> <a href="#3.1">Breeding</a><br>
+                    <span>3.2</span> <a href="#3.2">Flora</a><br>
+                    <span>3.3</span> <a href="#3.3">Progession</a><br>
+                </div>
+                <span>4.</span> <a href="#4">Music</a><br>
+                <span>5.</span> <a href="#5">Verdict</a><br>
+            </div>
+            <hr>
+            <center>
+                <span id="rating" class="mediocre">5.5</span>/10<br>
+                <i>Mediocre</i>
+            </center>
+            <hr>
+            <div id="img-container">
+                <table>
+                    <tr>
+                        <td>
+                            <img class="img" id="main-img" src="/assets/side/directors/astle.jpeg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="director" href="https://x.com/thomasastle">Tom Astle</a> is a game programmer and designer based in <a href="https://en.wikipedia.org/wiki/Los_Angeles">Los Angeles</a>. He is most known for his work on <i>Wobbledogs</i>, as well
+                            as additional work on <i>Tattletail</i>, <i>Animal Inspector</i>, <i>Zineth</i>, and <i>The Sims 4</i>. He is also really secretive. Which means I had to put in extra effort into this description. Now be grateful for my hard work.
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="/assets/side/2026/wobbledogs/gameplay.webp" class="img">
+                        </td>
+                        <td>
+                            Gameplay of two wobbledogs. This is the only screenshot in this page I did not take. I don't know these guys.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="/assets/side/2026/wobbledogs/memorial.png" class="img">
+                        </td>
+                        <td>
+                            The gravestone for mr first wobbledog. R.I.P. Sausage, missed by no one.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="/assets/side/2026/wobbledogs/gut.png" class="img">
+                        </td>
+                        <td>
+                            An example of a wobbledog's gut. I think this guy likes Phriole.
+                        </td>
+                    </tr>
+                </table>
+                <table id="sources">
+                    <tr>
+                        <td>
+                            <a href="https://backloggd.com/games/wobbledogs/">C</a> •
+                            <a href="https://wobbledogs.fandom.com/wiki/Gallery#Goals">S</a> •
+                            <a href="https://www.gamespress.com/WOBBLEDOGS-the-Weird-and-Wonderful-3D-Pet-Simulation-Game-Launches-Tod">1</a> •
+                            <a href="https://www.gamedeveloper.com/design/behind-the-ai-and-physics-of-i-wobbledogs-i-procedurally-goofy-wobbledogs">2</a> •
+                            <a onclick="self();" style="cursor: pointer;">3-4</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </aside>
+
+        <main class="main" id="review">
+            <h1 id="1">Synopsis</h1>
+            <p>
+                <span class="game-title">Wobbledogs</span> is a 2022 pet simulation game published by Secret Mode and created by Tom Astle. The game revolves around the concepts of <a href="https://en.wikipedia.org/wiki/Heredity">heredity</a> and biologic inheritance. The game has you take care of a bunch of
+                wobbledogs (which are clarified to be a different species to regular dogs) and to breed and nurture them. The game expands on the idea of heredity being a main focus, as the game features an incredibly advanced and sophisticated genetic system made for these wobbledogs. You discover more and more
+                analomies and genetic mutations as you play along the game, which is one of the main goals.
+            </p><br>
+
+            <h1 id="2">Art</h1>
+
+            <iframe src="https://www.youtube.com/embed/C5wjrDa3O3Y"></iframe>
+            
+            <p>
+                <i>Wobbledogs</i> takes on a very cutsey and aesthetically pleasing art style. The colours are vibrant and saturated, but not too much to the point it makes your eyes hurt. The 2D graphics and UI also look amazing. It is by far one of the most charming parts of the game. It's just so adorable! Except when your dogs die. Or throw up. Then, uh.. it's not as
+                cute.
+            </p><br>
+
+            <h1 id="3">Gameplay</h1>
+
+            <h3 id="3.1">Breeding</h3>
+            <p>
+                The game's main focus is breeding dogs and finding mutations within their breeding and other processes. This is a wonderful and great idea to turn into a game. A game like this does nothing but encourage discovery and curiosity. The dogs you breed get progressively weirder and more interesting the more you play. It's this weird but slightly fun cycle of throwing
+                whatever you have at the wall and seeing what happens. Not only that, but the algorithm that creates and mutates dogs is programmed phenomenally. Speaking of mutation, in the game your wobbledogs hibernate into cocoons everytime they grow up. After they're done hibernating, they dynamically change a based off of variable controls such as the food they ate. This is
+                an incredibly fun and unique gameplay dynamic.
+            </p><br>
+            
+            <h3 id="3.2">Flora</h3>
+            <p>
+                In the game, each food your wobbledogs eat have a unique flora. After consumption, that flora is stored into your wobbledog's gut, AKA their stomach. The afforementioned mutation (called <i>Pupation</i> in this game) is based off of this gut full of floras. Each flora has special affects on the wobbledogs, such as colour, height, fur patterns, and even extra or 
+                nonsensical limbs. You also have a flora field guide, which fills in eac indiviual flora and each of their affects as you see them take place or enter your wobbledog's diet. This is, such, such neat feature, but I wish that the affects were stronger than they are. The game calls itself a "sandbox", and actively encourages to try to get your wobbledogs to certain
+                requirements in the form of achievements (e.g. "Make a really long dog"), but the process is too tedious for it to be enjoyable.
+            </p>
+
+            <blockquote>
+                "I wanted food to affect mutations, but you needed a way to see how that food would change things that was more concrete than just using your intuition. I thought the concept of gut flora was fun and thematically appropriate. [...] When it came time to design the flora and their effects, there was so much freedom that it just made sense to restrict things to being
+                somewhat based on the nature of the food that contained them. It would've felt way too arbitrary otherwise. It's still not super rigid, but giving it that more defined base makes it easier to understand, I think."<br><br>
+
+                <div>
+                    —Tom Astle, on <a target="_blank" href="https://www.gamedeveloper.com/design/behind-the-ai-and-physics-of-i-wobbledogs-i-procedurally-goofy-wobbledogs">Behind the AI and physics of Wobbledogs' procedurally goofy Wobbledogs</a>
+                </div>
+            </blockquote><br>
+
+            <h3 id="3.3">Progression</h3>
+            <p>
+                Okay, you've probably been wondering why the review score is so low when I've been praising this game for so long. Well, <em><b>MAYBE IF YOU READ THE ENTIRE REVIEW YOU'LL FIND OUT, IDIOT!</b></em> Ahem, sorry, what was I saying? Yeah, the progression in this game is really bad. After the first two hours, the game starts to feel incredibly stale. The beginning of the game is very
+                eventful, but after that progression is extremely scarce and slow which is a shame since there's so much content that is simply just locked behind such a tedious breeding system. If things like obtaining new or additonal limbs wasn't literally entirely up to luck I wouldn't be so critical. You could argue that the lack of guidance is because the game is intended to be a sandbox and
+                you're meant to experiment on your own, which being honest could be true, but even if it's a sandbox, that doesn't elimate the fact that it isn't <em>fun</em>. Being a sandbox isn't an excuse to lock half of the content behind hours of grinding. And I'm not exaggerating that! It takes TWENTY AND A HALF HOURS <a target="_blank" href="https://howlongtobeat.com/game/89154" title="Citation 1"><sup>[1]</sup></a>
+                to see everything in the game! When you exclude that golden period of the first two hours thats EIGHTEEN HOURS OF GRINDING! Absolutely ABYSSMAL! Saying this game was a disappointment is an understatement. I tried any way to find a way to enjoy it, but I just couldn't. When the game is good, it's <em>good</em>, but this just ruins the experience for me and the game basically ends for most people
+                after the first few hours.
+            </p><br>
+
+            <h1 id="4">Music</h1>
+            <p>
+                On a lighter note, the music in <i>Wobbledogs</i> is really good. The soundtack is composed by Sam Keohane, AKA <a href="https://open.spotify.com/artist/31POcei5wic1KeohSKwFtX">Mbrr</a>. The music is fun and silly, and matches the energy of the game to a T. It's great background music for when you're working, both in the game and when you actually need to go outside and do work. I don't to that last one often.
+            </p>
+            
+            <center>
+                <audio controls paused src="https://file.garden/aq4rNt54Rv_YhH87/music/wobbledogs.mp3"></audio><br>
+                <span class="audio-subtext">
+                    Pupa Chow -
+                    <a href="https://downloads.khinsider.com/game-soundtracks/album/wobbledogs-ost-2021/04.%2520Pupa%2520Chow.mp3">downloads.khinsider.com</a>
+                </span>
+            </center><br>
+
+            <h1 id="5">Verdict</h1>
+            <p>
+                The epitome of wasted potential. It's fun for the first few hours, but after that the game commits the worst crime any game can do: being <em>boring</em>.
+                I'm totally not being dramatic because I was really exicted to play this game. This game is unfortunately a <span class="mediocre">5.5/10</span>.
+            </p>
+
+            <hr>
+            🛈 Reviewed on PC
+            <img src="/assets/age-rating/pegi/3.png" class="age-rating">
+            <img src="/assets/age-rating/esrb/e10.png" class="age-rating">
+        </main>
+    </section>
+
+    <footer class="main" id="footer">
+        <a href="https://neocities.org/site/irrelevantreviews">Irrelevant Reviews</a> | 
+        Powered by <a href="https://neocities.org/">Neocities</a><br>
+        <i>Written on 20/Sep/2026 | #17</i>
+    </footer>
+    <hr id="nothing">
+</body>
+</html>
