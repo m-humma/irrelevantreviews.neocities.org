@@ -91,9 +91,6 @@ ul{
   margin-top: 0;
   margin-bottom: 0;
 }
-li::marker, ul::marker{
-  color: gold;
-}
 dl{
   color: gold;
   margin-left: 30px;
@@ -130,6 +127,13 @@ button{
 button:hover{
   background-color: rgb(73, 0, 101);
   transition: 0.25s;
+}
+summary{
+  text-decoration: underline;
+  cursor: pointer;
+}
+::marker{
+  color: gold;
 }
 ::placeholder{
   color: black;
