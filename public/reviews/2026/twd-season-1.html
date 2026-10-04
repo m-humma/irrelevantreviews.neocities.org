@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    # NOTE FOR SELF -- HUMMA @ IRRELEVANT REVIEWS
+        ----------------------------------------------
+        |                 CHECKLIST                  |
+        ----------------------------------------------
+        |   Title                            |   Y   |
+        |   Side Info                        |   Y   |
+        |   Table of Contents                |   Y   |
+        |   Images and Sources               |   Y   |
+        |   Main review                      |   Y   |
+        |   Rating Score                     |   Y   |
+        |   Age ratings and platform         |   Y   |
+        |   Date and Number                  |   Y   |
+        |   Sticker                          |   Y   |
+        |   Reviews page and Home            |   Y   |
+        |   Update genres searchbox          |   Y   |
+        |   Update global.js                 |   Y   |
+        |   Backloggd                        |   Y   |
+        ----------------------------------------------
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Walking Dead</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <style>
+        #sticker{
+            height: 100px;
+            transform: rotate(12deg);
+            right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script src="/global.js"></script>
+    
+    <header class="main">
+        <div id="logo">
+            Irrelevant Reviews<br>
+        </div>
+        <div id="subtext">
+            <small>
+                Game reviews nobody asked for
+            </small>
+        </div>
+    </header>
+
+    <nav class="main">
+        <center style="font-style: italic;">
+            <a href="/index.html">Home</a> •
+            <a href="/reviews/index.html">Reviews</a> •
+            <a href="/blog/index.html">Blog</a>
+        </center>
+    </nav>
+
+    <section id="body">
+        <aside class="main" id="side">
+            <center>
+                <img src="/assets/boxart/twd-season-1.jpeg">
+                <br>
+                <span id="title">
+                    The Walking Dead
+                </span>
+                <hr>
+            </center>
+            <div id="stats">
+                <span>Developers:</span> Telltale Games<br>
+                <span>Initial Release:</span> 2012<br>
+                <span>Platform:</span> Switch, PS3, PS4, PS Vita, Xbox One, Xbox 360, Ouya, PC, Mobile<br>
+                <span>Genre:</span> Adventure, Interactive movie<br>
+                <span>Series:</span> <i>The Walking Dead</i>
+            </div>
+            <hr>
+            <div id="toc">
+                <h3>Table of Contents</h3>
+                <span>1.</span> <a href="#1">Synopsis</a><br>
+                <span>2.</span> <a href="#2">Art</a><br>
+                <span>3.</span> <a href="#3">Gameplay</a><br>
+                <div class="dec">
+                    <span>3.1</span> <a href="#3.1">Story and Dialogue Choices</a><br>
+                    <span>3.2</span> <a href="#3.2">Characters</a><br>
+                    <span>3.3</span> <a href="#3.3">Puzzles and Interactivity</a><br>
+                </div>
+                <span>4.</span> <a href="#4">Music</a><br>
+                <span>5.</span> <a href="#5">DLC</a><br>
+                <div class="dec">
+                    <span>5.1</span> <a href="#5.1"><i>400 Days</i></a><br>
+                </div>
+                <span>6.</span> <a href="#6">Verdict</a><br>
+            </div>
+            <hr>
+            <center>
+                <span id="rating" class="perfect">10</span>/10<br>
+                <i>Perfect</i>
+                <div id="dlc-container">
+                    <div class="dlc">400 Days - <span class="good">6.5</span></div>
+                </div>
+            </center>
+            <hr>
+            <div id="img-container">
+                <table>
+                    <tr>
+                        <td>
+                            <img class="img" id="main-img" src="/assets/side/directors/vanaman.jpg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="director" href="https://en.wikipedia.org/wiki/Sean_Vanaman">Sean Vanaman</a> is an Irish-American game designer, writer, and podcaster. He was born in
+                            <a href="https://en.wikipedia.org/wiki/Cork_(city)">Cork, Ireland</a>. He is most known for his work on <i>The Walking Dead</i> video game series. He also founded
+                            <a href="https://en.wikipedia.org/wiki/Campo_Santo_(company)">Campo Santo</a>, the company that produced <i>Firewatch</i>.
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="/assets/side/2026/twd-season-1/gameplay.jpg" class="img">
+                        </td>
+                        <td>
+                            Gameplay of the first episode. You can choose a different dialogue option depending on what button you press on your controller. 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="/assets/side/2026/twd-season-1/georgia.webp" class="img">
+                        </td>
+                        <td>
+                            The game is set in early 2000's Georgia. The cast visits several real life places including <a href="https://en.wikipedia.org/wiki/Macon,_Georgia">Macon</a>,
+                            <a href="https://en.wikipedia.org/wiki/Atlanta">Atlanta</a>, and <a href="https://en.wikipedia.org/wiki/Fort_Lauderdale,_Florida">Fort Lauderdale</a>, the latter
+                            of which is in Florida.
+                        </td>
+                    </tr>
+                </table>
+                <table id="sources">
+                    <tr>
+                        <td>
+                            <a href="https://en.wikipedia.org/wiki/File:The_Walking_Dead,_Season_One_cover.jpeg">C</a> •
+                            <a href="https://www.deviantart.com/borgster93/art/Clementine's-Hat-492432759">S</a> •
+                            <a href="https://en.wikipedia.org/wiki/File:Sean_Vanaman_cropped.jpg">1</a> •
+                            <a href="https://en.wikipedia.org/wiki/File:Walking_dead_telltale_game_dialog_screenshot.jpg">2</a> •
+                            <a href="https://en.wikipedia.org/wiki/File:Flag_of_the_State_of_Georgia.svg">3</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </aside>
+
+        <main class="main" id="review">
+            <h1 id="1">Synopsis</h1>
+            <p>
+                <span class="game-title">The Walking Dead</span>, oftentimes also known as <i>The Walking Dead: Season One</i> after the release of the following entries, is an interactive movie adventure game developed by <a href="https://en.wikipedia.org/wiki/Telltale_Games">Telltale Games</a>.
+                The game is based off of the comic book series of the same name created by <a href="https://en.wikipedia.org/wiki/Robert_Kirkman">Robert Kirkman</a>. The game follows the story of a post-apocalyptic world being overrun by a rampant infestion of "Walkers" (this game's copyright-free
+                term for zombies). You play as an adult man, Lee Everett, alongside a lost little girl named Clementine -- who by the end of the game you make a very deep connection with. The game follows the story of these two as they travel across the U.S. state of Georgia in hopes of survival. You
+                meet multiple people across the game, many of whom you will have a differing relationship with depending on how you acted towards them in-game. The game is split into five seperate installable episodes that released periodically through the later half of 2012. Its first and only DLC,
+                <span class="dlc-title">400 Days</span>, contains the stories of five different survivors in the length of a single episode. It was created to attempt to bridge the gap between the first and second seasons.
+            </p><br>
+
+            <h1 id="2">Art</h1>
+            
+            <iframe src="https://www.youtube.com/embed/N40uY51s5Z0"></iframe>
+
+            <p>
+                For being released in 2012, the graphics in <i>The Walking Dead</i> look great. The game takes on semi-realistic art style, utilising a 3D enviroment. This is not to say that the game looks <em>perfect</em>, it definitely shows its age at times, but it's still absolutely phenomenal looking,
+                especially for such an old game. The game manages to keep its style relatively serious most of the time, but it can very easily be used for a few light-hearted moments too. The game also manages gore fairly well, where it still feels disturbing without being <em>too</em> bad. Most of the
+                fear I've gotten from this game was moreso from the overall shock of the events happening as opposed to the severity of the graphics, which in my opinion is a pretty telling sign of good story writing.
+            </p><br>
+
+            <h1 id="3">Gameplay</h1>
+            <h3 id="3.1">Story and Dialogue Choices</h3>
+            <p>
+                <i>The Walking Dead</i> has an incredibly impactful and meaningful storyline. As mentioned before, the choices you make affect how the story follows. Certain characters can die or get severely injured depending on your choices, no matter whether if your choice was intentional or accidental. There's
+                a lot of choices that come with a lot of weight, which really makes you sit there and consider your options carefully. It's an extremely interesting and well-executed gameplay mechanic that ties in with the main storyline very neatly. There's also a few options that affect choices multiple episodes in advance,
+                which makes for some really good plot points and callbacks. EXTREMELY, and I mean EXTREMELY MAJOR SPOILERS, like, please don't look at this unless you've already beaten the game: <span id="spoiler1" onclick="spoiler(1);">The second final sequence was probably my favourite part of the game. The way all of your past choices come back to bite you in the ass
+                was executed superbly. I stole from the abandoned car, and my heart sunk to my ass when it was the revealed the guy who took Clementine was one of the owners of that car. Simply just amazing.</span>
+            </p><br>
+
+            <h3 id="3.2">Characters</h3>
+            <p>
+                The characters in <i>The Walking Dead</i> all wildly differ from each other. Every character is unique in their own way. Many of them have incredibly different values and traditions from each other, and to be honest, most of them have flaws. Either being, hypocritical, irrational, or even cowardly, it's very safe to say
+                that none of the characters are perfect, which gives them a very human trait, in my opinion. Even my favourite characters have some dirt on them whilst the most flawed still have some of their good moments. Except <span id="spoiler2" onclick="spoiler(2);">Clementine</span>. She's chill.
+            </p><br>
+
+            <h3 id="3.3">Puzzles and Interactivity</h3>
+            <p>
+                Whilst you play, there's a few sections where you can freely roam around a small area and tinker with the different things around. Usually this results in you needing to interact with the objects in such a way that progresses the story, almost like a puzzle of some sorts. I really love these segments, and I think they're just as fun to play
+                as much as watching the dialogue. It usually is pretty fair, but there are a few parts that could use some elaboration, and I needed to look up a guide for them. It's in all honesty to be expected for such a dated game, though. Sometimes you'll also encounter <a href="https://en.wikipedia.org/wiki/Quick_time_event">quick-time events</a>.
+                I do really like the QTEs in this game. They feel a lot more fairer compared to other games I've tried with them.
+            </p><br>
+
+            <h1 id="4">Music</h1>
+            <p>
+                There isn't really much "music" in the game in the traditional sense. It's mostly just a collection of eerie sounds and tracks, with a few proper action tracks. The music sets the music very well, though. And the credits theme is also really good.
+            </p>
+
+            <center>
+                <audio controls pasued src="https://file.garden/aq4rNt54Rv_YhH87/music/twd-season-1.mp3"></audio><br>
+                <span class="audio-subtext">
+                    Take Us Back (Credits) -
+                    <a href="https://downloads.khinsider.com/game-soundtracks/album/the-walking-dead-season-one-gamerip-2012">
+                        khinsider.downloads.com
+                    </a>
+                </span>
+            </center><br>
+
+            <img src="/assets/sticker/clementines-hat.png" id="sticker">
+
+            <h1 id="5">DLC</h1>
+            <h3 id="5.1">400 Days</h3>
+            <p>
+                <i>400 Days</i> contains five seperate, individual stories of five different survivors set in different timeframes of the story. This DLC, err, really didn't quite sit with me. Was it enjoyable? Yes, it was great, but the DLC's purpose doesn't feel very meaningful as compared to the main game. Obviously
+                they can't create a full-blown story in a single episode, but it doesn't really feels like the DLC was necessary story-wise. A few of the characters have cameos in the second season, but only is really important. Apparently a lot of the content intended for season two was cut and reimagined, so I have to assume
+                that 400 Days' place in the story got a bit mangled because of that. It just felt like a tiny bit more of world-building.  
+            </p><br>
+
+            <h1 id="6">Verdict</h1>
+            <p>
+                <i>The Walking Dead</i> is an amazing, impactful and outright beautiful work of a game. It utilises its medium wondefully to make an outstanding and unforgettable result. This game will keep your head turning long after you finish it. For this reason, I'm giving it a <span class="perfect">10/10</span>. 
+            </p>
+
+            <hr>
+            🛈 Reviewed on PC
+            <img src="/assets/age-rating/cero/z.png" class="age-rating">
+            <img src="/assets/age-rating/pegi/18.png" class="age-rating">
+            <img src="/assets/age-rating/esrb/m.png" class="age-rating">
+        </main>
+    </section>
+
+    <footer class="main" id="footer">
+        <a href="https://neocities.org/site/irrelevantreviews">Irrelevant Reviews</a> | 
+        Powered by <a href="https://neocities.org/">Neocities</a><br>
+        <i>Written on 4/Oct/2026 | #19</i>
+    </footer>
+    <hr id="nothing">
+</body>
+</html>
