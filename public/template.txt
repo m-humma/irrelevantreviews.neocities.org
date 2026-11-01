@@ -14,7 +14,6 @@
         |   Rating Score                     |   N   |
         |   Age ratings and platform         |   N   |
         |   Date and Number                  |   N   |
-        |   Sticker                          |   N   |
         |   Reviews page and Home            |   N   |
         |   Update genres searchbox          |   N   |
         |   Update global.js                 |   N   |
