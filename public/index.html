@@ -134,6 +134,35 @@
                 display: none;
             }
         }
+
+        /* droidring */
+        .droidringwidgetSMALL {
+            font-family: 'Droid Sans',sans-serif;
+            align-content: center;
+            text-align: center;
+            width: 157px;
+            border: 1px solid #666666;
+            background: linear-gradient(0deg, black, #000000db);
+            padding: 5px;
+        }
+        .buttonsdroidringSMALL {
+            background: #989898;
+            padding: 4px;
+            margin: -5px;
+        }
+        .navdroidringSMALL {
+            background: linear-gradient(to bottom, #F1F1F1, #B8B8B8);
+            padding: 5px;
+            color: black;
+            box-shadow: 0 3px 6px #00000029, 0 3px 6px #0000003B;
+            border: none;
+            width: 50px;
+            height: 27px;
+            min-width: 50px;
+        }
+        .navdroidringSMALL:active {
+            background: linear-gradient(to bottom,#FFD554,#E99D00);
+        }
     </style>
 </head>
 <body>
@@ -307,7 +336,7 @@
                     <div id="webrings-container">
                         <table id="webrings" align="center">
                             <tr>
-                            <td>
+                                <td>
                                     <table id="palestinering">
                                         <td>
                                             <a href="https://catboo.leprd.space/webring/redirect.php?prv&s=irr" title="previous">
@@ -368,17 +397,16 @@
                                 </td>
                                 <td>
                                     <center>
-                                        <div class="droidringwidget" style="background-color: black; padding: 5px;">
-                                            <a href="https://kanandraw.neocities.org/stuffs/droidring/home"><img src="https://kanandraw.neocities.org/stuffs/droidring/assets/logo.png" style="width: 200px;"></a><br/>
-                                            <img src="https://kanandraw.neocities.org/stuffs/droidring/assets/droidwidget.png" style="width: 115px;"><br>
-                                            <div class="buttonsdroidring">
-                                            <a href="https://kanandraw.neocities.org/stuffs/droidring/home?action=previous"><button class="navdroidring">←</button></a>
-                                            <a href="https://kanandraw.neocities.org/stuffs/droidring/home?action=random"><button class="navdroidring" style="position: relative; top: 1.6px;">⚄</button></a>
-                                            <a href="https://kanandraw.neocities.org/stuffs/droidring/home?action=next"><button class="navdroidring">→</button></a>
+                                        <div style="width: 200px !important;" class="droidringwidgetSMALL">
+                                            <a href="https://kanandraw.neocities.org/stuffs/droidring/home"><img src="https://kanandraw.neocities.org/stuffs/droidring/assets/logo.png" width="157px">
+                                            <img src="https://kanandraw.neocities.org/stuffs/droidring/assets/droidsmallwidget.png" style="width: 115px;" title="DroidRing!"></a><br>
+                                            <div class="buttonsdroidringSMALL">
+                                            <a href="https://kanandraw.neocities.org/stuffs/droidring/home?action=previous"><button class="navdroidringSMALL">←</button></a>
+                                            <a href="https://kanandraw.neocities.org/stuffs/droidring/home?action=random"><button class="navdroidringSMALL" style="position: relative; top: 1.4px;">⚄</button></a>
+                                            <a href="https://kanandraw.neocities.org/stuffs/droidring/home?action=next"><button class="navdroidringSMALL">→</button></a>
                                             </div>
                                         </div>
                                     </center>
-                                </td>
                                 </td>
                                 <td>
                                     <div id='gamer-ring' style="width: 150px;">
