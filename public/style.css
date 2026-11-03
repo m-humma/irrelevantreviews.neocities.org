@@ -227,6 +227,11 @@ summary{
   margin-top: 0;
   margin-bottom: 0;
 
+  .tag{
+    height: 30px;
+    width: 130px;
+    border: 0;
+  }
   img{
     width: 300px;
     border: 7px rgb(55, 0, 92) solid;
@@ -354,6 +359,11 @@ summary{
     background-color: rgba(0, 0, 0, 0);
     border: 0;
   }
+}
+.tag{
+  height: 25px;
+  width: 100px;
+  border: 0;
 }
 
 @media(max-width: 1290px){
