@@ -32,7 +32,7 @@
     <div class="main">
         <div class="blog-nav">
             <a title="Entry #" href="">&lt;&lt;</a>
-            <span title="Entry #" style="color: black;">Entry #</span>
+            <span title="Entry #" style="color: var(--text);">Entry #</span>
             <span title="Nothing to see here..." style="color: gray !important;">&gt;&gt;</span>
         </div><br>
         <span class="blog-date">-- -- --</span>

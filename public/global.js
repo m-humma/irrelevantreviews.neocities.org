@@ -21,3 +21,55 @@ function randomReview(){
 function self(){
     window.alert("My source? Well, I made it myself! With a box of scraps in a cave!")
 }
+
+// themes
+function switchTheme(theme) {
+    document.querySelector('body').setAttribute('data-theme', theme);
+}
+function saveTheme(theme) {
+  localStorage.setItem('theme', theme)
+}
+
+function loadTheme(theme) {
+  return localStorage.getItem('theme')
+}
+
+function setTheme(theme) {
+  document
+    .querySelector('body')
+    .setAttribute('data-theme', theme)
+}
+
+function switchTheme(theme) {
+  setTheme(theme)
+  saveTheme(theme)
+}
+
+const theme = loadTheme()
+setTheme(theme)
+
+// fonts
+function switchFont(font) {
+    document.querySelector('body').setAttribute('data-font', font);
+}
+function saveFont(font) {
+  localStorage.setItem('font', font)
+}
+
+function loadFont(font) {
+  return localStorage.getItem('font')
+}
+
+function setFont(font) {
+  document
+    .querySelector('body')
+    .setAttribute('data-font', font)
+}
+
+function switchFont(font) {
+  setFont(font)
+  saveFont(font)
+}
+
+const font = loadFont()
+setFont(font)
