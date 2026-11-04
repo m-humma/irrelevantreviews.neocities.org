@@ -24,7 +24,7 @@
         #webrings{
             table, td, tr, th{
                 border: 0;
-                background-color: rgb(193, 127, 255);
+                background-color: var(--main-lighter);
             }
         }
         #webrings-container{
@@ -51,10 +51,10 @@
             }
             img{
                 width: 200px;
-                border: 5px rgb(55, 0, 92) solid;
+                border: 5px var(--border) solid;
             }
             a{
-                color: yellow !important;
+                color: var(--accent-light) !important;
             }
             span{
                 font-size: 20px;
@@ -166,6 +166,8 @@
     </style>
 </head>
 <body>
+    <script src="global.js"></script>
+
     <header class="main">
         <div id="logo">
             Irrelevant Reviews<br>
@@ -185,8 +187,26 @@
         </center>
     </nav>
 
-    <main class="main">
-    
+    <div class="main">
+        <h1>Settings</h1>
+        <p>
+            <span style="color: var(--accent);">Theme:</span>
+            <button onClick="switchTheme('default')">Default</button>
+            <button onClick="switchTheme('dark')">Accessible Dark</button>
+            <button onClick="switchTheme('light')">Accessible Light</button>
+        </p>
+        <p>
+            <span style="color: var(--accent);">Font:</span>
+            <button style="font-family: 'Handwriting';" onClick="switchFont('default')">Default</button>
+            <button style="font-family: 'Helvetica';" onClick="switchFont('helvetica')">Helvetica</button>
+            <button style="font-family: 'OpenDyslexic'; font-size: 0.64em;" onClick="switchFont('opendyslexic')">OpenDyslexic</button>
+        </p>
+        <p>
+            <button onclick="switchTheme('default'); switchFont('default')">Restore to Default</button>
+        </p>
+    </div>
+
+    <main class="main">    
         <h1>About</h1>
         <p>
             Hello! This is a tiny website I use to publish my own game reviews
@@ -202,14 +222,14 @@
         <img src="assets/pfp.jpg" title="It's a Mii, Humma!" alt="Me, as a Mii." style="float: right; height: 180px; border: 5px rgb(55, 0, 92) solid; margin: 5px;">
         <p>
             Hello! I don't have a proper name, but if you need to, just call me <i>Humma</i>. I am an amatuer website programmer and retro game enthuasiast from <a href="https://en.wikipedia.org/wiki/File:Flag_of_Pakistan.svg" target="_blank">
-            <img title="Flag of Pakistan" style="display: inline; height: 15px; border: 3px solid rgb(55, 0, 92);"
+            <img title="Flag of Pakistan" style="display: inline; height: 15px; border: 3px var(--border) solid;"
             src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg" alt="PK"></a> Pakistan. I'm male and also a teenager. I on occasion also draw, though
             I don't do it very often. I don't see many shows, but I do watch a few on very rare occasions. I own only one console, a <s>modded</s> <em>totally untinkered</em> with Nintendo
             Switch, and use emulators for everything else. I would love to actually go out and buy the consoles, but they just simply aren't available in my region.
         </p><br>
         <p>
             <center>
-                <span style="color: gold;">Find me at:</span>
+                <span style="color: var(--accent);">Find me at:</span>
                 <a href="https://www.instagram.com/m_humma_/">Instagram</a> -
                 <a href="https://backloggd.com/u/Humma/">Backloggd</a> -
                 <a href="https://retroachievements.org/user/Humma">RetroAchievements</a> -
@@ -217,8 +237,8 @@
                 <a href="https://github.com/m-humma">GitHub</a> -
                 <a href="https://irrelevantreviews.atabook.org/">Atabook</a>
                 <br>
-                <span style="color: gold;">Learn more about me at:</span>
-                <a href="junk/100-questions">100 Questions for Webmasters</a>
+                <span style="color: var(--accent);">Learn more about me at:</span>
+                <a href="blog/2026/100q.html">100 Questions for Webmasters</a>
             </center>
         </p>
         <hr>
@@ -245,7 +265,7 @@
                     <button onclick="copy()">Copy code</button>
                 </td>
                 <td>
-                    <h3 style="color: gold;">Button</h3>
+                    <h3>Button</h3>
                     <p>
                         Feel free to add my button to your neocities site if you like my website enough!
                     </p>
@@ -253,7 +273,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <h3 style="color: gold;">Neighbours</h3>
+                    <h3>Neighbours</h3>
                     <div class="btn-container">
                         <details>
                             <summary>Show buttons</summary>
@@ -308,7 +328,7 @@
                         </details>
                     </div>
                     <hr>
-                    <h3 style="color: gold;">Other</h3>
+                    <h3>Other</h3>
                     <div class="btn-container">
                         <details>
                             <summary>Show buttons</summary>
@@ -331,7 +351,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <h3 style="color: gold;">Webrings</h3>
+                    <h3>Webrings</h3>
                     <center>
                     <div id="webrings-container">
                         <table id="webrings" align="center">
@@ -449,8 +469,8 @@
         </table>
         <hr>
         <center>
-            <span style="color: gold;">Currently playing:</span> Endacopia, The Elephant Collection, The Walking Dead: Season 2<br>
-            <span style="color: gold;">Planning to play:</span> Persona 4 Golden
+            <span style="color: var(--accent);">Currently playing:</span> Endacopia, The Elephant Collection, The Walking Dead: Season 2<br>
+            <span style="color: var(--accent);">Planning to play:</span> Persona 4 Golden
         </center>
     </main>
 
@@ -567,7 +587,7 @@
       <h1>Credits</h1>
       <ul>
         <li>
-          Main font designed by me. <a href="https://fonts.google.com/specimen/Redacted"><i>Redacted</i></a> font used for spoilers taken from <a href="https://fonts.google.com">Google Fonts</a>.
+          Main font designed by me. <a href="https://fonts.google.com/specimen/Redacted"><i>Redacted</i></a> font used for spoilers taken from <a href="https://fonts.google.com">Google Fonts</a>. OpenDyslexic developed by <a href="https://opendyslexic.org/">OpenDyslexic.org</a>.
         </li>
         <li>
           All reviews are hand-written by me.

@@ -16,29 +16,32 @@
             color: black !important;
         }
         .entry{
-            border: 5px rgb(55, 0, 92) solid;
+            border: 5px var(--border) solid;
             padding: 7px;
-            background-color: rgb(170, 80, 255);
+            background-color: var(--main-light);
             margin-bottom: 5px;
+            color: var(--text);
 
             center{
-                color: gold;
+                color: var(--accent);
             }
         }
         .title{
             font-size: 35px;
-            color: rgb(218, 185, 1);
+            color: var(--accent-dark);
             font-weight: bold;
         }
         .number{
             float: right;
             font-size: 35px;
-            color: rgb(218, 185, 1);
+            color: var(--accent-dark);
             font-weight: bold;
         }
     </style>
 </head>
 <body>
+    <script src="/global.js"></script>
+
     <header class="main">
         <div id="logo">
             Irrelevant Reviews<br>
