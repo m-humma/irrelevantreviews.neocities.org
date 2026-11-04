@@ -390,7 +390,8 @@ summary{
   cursor: pointer;
 }
 #nothing{
-  border: 2px var(--background) solid
+  border: 5px var(--background) solid;
+  margin: 0;
 }
 
 .omit-on-desktop{
