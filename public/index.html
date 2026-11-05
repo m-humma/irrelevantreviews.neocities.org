@@ -89,6 +89,20 @@
             transition: 0.2s;
             opacity: 20%;
         }
+        #settings{
+            center{
+                background-color: var(--main-light);
+                padding: 5px;
+            }
+            p{
+                background-color: var(--main-lighter);
+                padding: 5px;
+            }
+            button{
+                height: 40px;
+                margin-top: 0;
+            }
+        }
 
         /* .zero{
             background-color: gray;
@@ -187,23 +201,25 @@
         </center>
     </nav>
 
-    <div class="main">
+    <div id="settings" class="main">
         <h1>Settings</h1>
-        <p>
-            <span style="color: var(--accent);">Theme:</span>
-            <button onClick="switchTheme('default')">Default</button>
-            <button onClick="switchTheme('dark')">Accessible Dark</button>
-            <button onClick="switchTheme('light')">Accessible Light</button>
-        </p>
-        <p>
-            <span style="color: var(--accent);">Font:</span>
-            <button style="font-family: 'Handwriting';" onClick="switchFont('default')">Default</button>
-            <button style="font-family: 'Helvetica';" onClick="switchFont('helvetica')">Helvetica</button>
-            <button style="font-family: 'OpenDyslexic'; font-size: 0.64em;" onClick="switchFont('opendyslexic')">OpenDyslexic</button>
-        </p>
-        <p>
-            <button onclick="switchTheme('default'); switchFont('default')">Restore to Default</button>
-        </p>
+        <center>
+            <p>
+                <span style="color: var(--accent);">Theme:</span>
+                <button onClick="switchTheme('default')">Default</button>
+                <button onClick="switchTheme('dark')">Accessible Dark</button>
+                <button onClick="switchTheme('light')">Accessible Light</button>
+            </p>
+            <p>
+                <span style="color: var(--accent);">Font:</span>
+                <button style="font-family: 'Handwriting';" onClick="switchFont('default')">Default</button>
+                <button style="font-family: 'Helvetica';" onClick="switchFont('helvetica')">Helvetica</button>
+                <button style="font-family: 'OpenDyslexic'; font-size: 0.64em;" onClick="switchFont('opendyslexic')">OpenDyslexic</button>
+            </p>
+            <p>
+                <button onclick="switchTheme('default'); switchFont('default')">Restore to Default</button>
+            </p>
+        </center>
     </div>
 
     <main class="main">    
