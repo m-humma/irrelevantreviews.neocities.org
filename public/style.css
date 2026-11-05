@@ -383,7 +383,7 @@ summary{
   }
 }
 #spoiler1, #spoiler2, #spoiler3, #spoiler4, #spoiler5{
-  font-family: "Redacted" !important;
+  font-family: "Redacted";
   background-color: var(--spoiler);
 }
 #spoiler1:hover, #spoiler2:hover, #spoiler3:hover, #spoiler4:hover, #spoiler5:hover{
