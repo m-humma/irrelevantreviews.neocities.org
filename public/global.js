@@ -76,7 +76,4 @@ setFont(font)
 
 if(font == "null" || font == null){
   switchFont("default");
-  console.log("Automatically adjusted font");
 }
-
-console.log(font)
