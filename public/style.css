@@ -20,6 +20,24 @@
 }
 
 :root{
+  --background: rgb(219, 165, 255); 
+  --main: blueviolet;
+  --main-light: rgb(170, 80, 255);
+  --main-lighter: rgb(193, 127, 255);
+  --accent: gold;
+  --accent-light: yellow;
+  --accent-dark: rgb(218, 185, 1);
+  --text: black;
+  --link: pink;
+  --border: rgb(55, 0, 92);
+  --iframe: rgb(19, 0, 32);
+  --button: rgb(117, 35, 194);
+  --button-hover: rgb(73, 0, 101);
+  --dlc-title: lightgreen;
+  --logo-shadow: white;
+  --spoiler: rgb(20, 20, 20);
+  --selection-text: gold;
+  --selection-background: rgb(55, 0, 92);
   --font: "Handwriting";
 }
 [data-theme='default']{ /* Default */
