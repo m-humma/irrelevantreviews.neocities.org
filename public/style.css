@@ -155,7 +155,7 @@ blockquote{
 iframe{
   float: right;
   margin: 10px;
-  border: 5px --border solid;
+  border: 5px var(--border) solid;
   background-color: var(--iframe);
 }
 audio{
@@ -184,6 +184,7 @@ mark{
 }
 input{
   width: 86%;
+  height: 24px;
   color: var(--text) !important;
   background-color: var(--main-light);
   border: 2px var(--accent) solid;
@@ -201,6 +202,7 @@ button{
   color: var(--accent);
   border: 2px var(--accent) solid;
   padding: 5px;
+  margin-top: 7px;
   font-family: var(--font);
   font-size: 20px;
 }
