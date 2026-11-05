@@ -74,7 +74,7 @@ function switchFont(font) {
 const font = loadFont()
 setFont(font)
 
-if(font != "default" && font != "dark" && font != "light" || font == "null" || font == null){
+if(font == "null" || font == null){
   switchFont("default");
   console.log("Automatically adjusted font");
 }
