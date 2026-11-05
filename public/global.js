@@ -73,7 +73,3 @@ function switchFont(font) {
 
 const font = loadFont()
 setFont(font)
-
-if(font == "null" || font == null){
-  switchFont("default");
-}
