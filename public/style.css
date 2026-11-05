@@ -19,7 +19,9 @@
   src: url(assets/opendyslexic.otf);
 }
 
-:root,
+:root{
+  --font: "Handwriting";
+}
 [data-theme='default']{ /* Default */
   --background: rgb(219, 165, 255); 
   --main: blueviolet;
