@@ -85,7 +85,7 @@
   --scrollbar-2: rgb(236, 236, 236);
   --scrollbar-background: rgb(27, 27, 27);
   --icon: url(/assets/icon/dark/old-search.jpg);
-} /* Light */
+}
 [data-theme='light']{ /* Light */
   --background: rgb(27, 27, 27); 
   --main: rgb(216, 216, 216); /* lightest */
