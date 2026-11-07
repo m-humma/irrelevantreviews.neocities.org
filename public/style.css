@@ -118,6 +118,7 @@
 }
 [data-font='opendyslexic']{ /* OpenDyslexic */
   --font: "OpenDyslexic", "Arial", "Times New Roman";
+  zoom: 70%;
 }
 
 body{
