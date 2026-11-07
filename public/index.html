@@ -179,6 +179,39 @@
         .navdroidringSMALL:active {
             background: linear-gradient(to bottom,#FFD554,#E99D00);
         }
+
+        /* cosmic club */
+        .cosmic-club-widget {
+            width: 200px;
+            height: 200px;
+            background-color: #000000;
+            border: 2px solid #E1DAB9;
+            border-radius: 13px;
+            box-shadow: 4px 4px 0px #E1DAB9;
+            background-image: 
+            radial-gradient(#FFFFFF 1.3px, transparent 1.3px),
+            radial-gradient(rgba(255,255,255,0.7) 1px, transparent 1px),
+            radial-gradient(#FFFFFF 0.7px, transparent 0.7px);
+            background-size: 110px 110px, 160px 160px, 75px 75px;
+            background-position: 0 0, 50px 80px, 25px 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-sizing: border-box;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+        .cosmic-club-widget:active {
+            transform: translate(4px, 4px) !important;
+            box-shadow: 1px 1px 0px #E1DAB9 !important;
+        }
+        .cosmic-club-widget img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            display: block;
+            pointer-events: none;
+        }
     </style>
 </head>
 <body> 
@@ -478,6 +511,11 @@
                                         <script type="text/javascript" src="https://nickolox.com/pikring/pikring-variables.js"></script>
                                         <script type="text/javascript" src="https://nickolox.com/pikring/pikring-widget.js"></script>
                                     </div>
+                                </td>
+                                <td>
+                                    <a href="https://cosmic-seea.neocities.org/CosmicClub" target="_blank" class="cosmic-club-widget">
+                                        <img src="https://irrelevantreviews.neocities.org/assets/planet.png" alt="Cosmic Club Member">
+                                    </a>
                                 </td>
                             </tr>
                         </table>
