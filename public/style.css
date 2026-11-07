@@ -39,7 +39,7 @@
   --selection-text: gold;
   --selection-background: rgb(55, 0, 92);
   --icon: url(/assets/icon/default/old-search.jpg);
-  --font: "Handwriting";
+  --font: "Handwriting", "Additional2", "Additional1", "Arial", "Times New Roman";
 }
 [data-theme='default']{ /* Default */
   --background: rgb(219, 165, 255); 
