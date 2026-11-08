@@ -121,6 +121,9 @@
   zoom: 70%;
 }
 
+html{
+  scrollbar-color: var(--accent) var(--main);
+}
 body{
   height: 100%;
   margin: 0;
@@ -129,7 +132,6 @@ body{
   font-family: var(--font);
   color: var(--text);
   accent-color: var(--accent);
-  scrollbar-color: var(--accent) var(--main);
 }
 small{
   font-size: 22px; 
