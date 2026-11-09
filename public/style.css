@@ -81,9 +81,6 @@
   --spoiler: rgb(216, 216, 216);
   --selection-text: rgb(236, 236, 236);
   --selection-background: rgb(0, 0, 189);
-  --scrollbar-1: rgb(57, 57, 57);
-  --scrollbar-2: rgb(236, 236, 236);
-  --scrollbar-background: rgb(27, 27, 27);
   --icon: url(/assets/icon/dark/old-search.jpg);
 }
 [data-theme='light']{ /* Light */
@@ -121,9 +118,6 @@
   zoom: 70%;
 }
 
-html{
-  scrollbar-color: var(--accent) var(--main);
-}
 body{
   height: 100%;
   margin: 0;
@@ -510,7 +504,7 @@ summary{
     overflow-x: auto;
     height: 500px;
     padding: 3px;
-    border: 5px --border solid;
+    border: 5px var(--border) solid;
     scrollbar-color: var(--accent) var(--border);
     background-color: var(--accent);
   }
