@@ -361,7 +361,9 @@ summary{
 }
 .icon{
   border: 0 !important;
-  width: 20px !important;
+  width: 40px !important;
+  margin-top: 5px;
+  float: right !important;
 }
 #toc{
   margin-left: 10px;
