@@ -22,6 +22,11 @@ function self(){
     window.alert("My source? Well, I made it myself! With a box of scraps in a cave!")
 }
 
+// mature icon
+function mature(topics){
+    window.alert("This review mentions a few topics that can make some people uncomfortable. These topics include: " + topics + ".")
+}
+
 // themes
 function switchTheme(theme) {
     document.querySelector('body').setAttribute('data-theme', theme);
