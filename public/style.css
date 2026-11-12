@@ -356,10 +356,10 @@ summary{
     font-weight: bold;
   }
 }
-#featured-container:hover{
+.icon-container:hover{
   text-decoration: none;
 }
-#featured{
+.icon{
   border: 0 !important;
   width: 20px !important;
 }
