@@ -365,6 +365,7 @@ summary{
   margin-top: 5px;
   margin-left: 5px;
   float: right !important;
+  cursor: pointer;
 }
 #toc{
   margin-left: 10px;
