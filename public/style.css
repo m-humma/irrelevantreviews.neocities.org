@@ -331,7 +331,7 @@ summary{
   margin-top: 0;
   margin-bottom: 0;
 
-  .tag{
+  .tag{ /* deprecated */
     height: 30px;
     width: 130px;
     border: 0;
@@ -355,6 +355,13 @@ summary{
     font-size: 3em;
     font-weight: bold;
   }
+}
+#featured-container:hover{
+  text-decoration: none;
+}
+#featured{
+  border: 0 !important;
+  width: 20px !important;
 }
 #toc{
   margin-left: 10px;
