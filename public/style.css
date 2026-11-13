@@ -86,6 +86,7 @@
   --scrollbar-background: rgb(27, 27, 27);
   --icon: url(/assets/icon/light/old-search.jpg);
 }
+:root,
 [data-font='default']{ /* Default */
   --font: "Handwriting", "Additional2", "Additional1", "Arial", "Times New Roman";
 }
