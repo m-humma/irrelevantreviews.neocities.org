@@ -431,7 +431,7 @@ summary{
   padding: 5px;
 
   a{
-    color: gold !important;
+    color: var(--accent) !important;
   }
 }
 .blog-img{
