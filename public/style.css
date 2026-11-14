@@ -132,6 +132,7 @@ a{
 }
 a:hover{
   text-decoration: underline;
+  font-style: italic;
 }
 hr{
   border: 2px var(--border) solid;
@@ -213,8 +214,11 @@ button:hover{
   transition: 0.25s;
 }
 summary{
-  text-decoration: underline;
   cursor: pointer;
+}
+summary:hover{
+  text-decoration: underline;
+  font-style: italic;
 }
 ::marker{
   color: var(--accent);
