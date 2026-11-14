@@ -526,7 +526,7 @@ summary:hover{
   color: chartreuse !important; /* Good */
 }
 .amazing{
-  color: darkgreen !important; /* Amazing */
+  color: rgb(0, 77, 0) !important; /* Amazing */
 }
 .perfect{
   color: blue !important; /* Perfect */
