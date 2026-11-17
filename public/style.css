@@ -417,10 +417,11 @@ summary:hover{
 }
 #spoiler1, #spoiler2, #spoiler3, #spoiler4, #spoiler5{
   font-family: "Redacted";
-  background-color: var(--spoiler);
+  background-color: var(--text);
 }
 #spoiler1:hover, #spoiler2:hover, #spoiler3:hover, #spoiler4:hover, #spoiler5:hover{
   color: var(--spoiler);
+  background-color: var(--spoiler);
   transition: 0.7s;
   cursor: pointer;
 }
