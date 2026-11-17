@@ -371,6 +371,17 @@ summary:hover{
     color: var(--text);
   }
 }
+#img-container{
+  td{
+    width: 50%;
+  }
+  #main-img{
+    width: 300px !important;
+  }
+  img{
+    width: 90% !important;
+  }
+}
 #main-img{
   width: 300px !important;
 }
