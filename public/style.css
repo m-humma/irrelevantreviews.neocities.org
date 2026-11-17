@@ -382,9 +382,6 @@ summary:hover{
     width: 90% !important;
   }
 }
-#main-img{
-  width: 300px !important;
-}
 #director{
   color: var(--accent);
   font-weight: bold !important;
