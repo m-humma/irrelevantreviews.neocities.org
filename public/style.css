@@ -245,6 +245,7 @@ summary:hover{
 .img{
   width: 160px !important;
   background-color: white;
+  border: 5px var(--border) solid !important;
 }
 .age-rating{
   height: 40px !important;
