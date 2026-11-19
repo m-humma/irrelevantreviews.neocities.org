@@ -136,6 +136,12 @@ h3{
 a{
   color: var(--link);
   text-decoration: none;
+
+  img:hover{
+    transform: scale(1.2);
+    z-index: 999;
+    transition: 0.2s;
+  }
 }
 a:hover{
   text-decoration: underline;
@@ -485,6 +491,11 @@ summary:hover{
 
 @media(max-width: 1290px){
   /* for phones */
+  a img:hover{
+    transform: scale(1.0);
+    z-index: auto;
+  }
+
   .omit-on-phone, .sticker-omitted{
     display: none;
   }
